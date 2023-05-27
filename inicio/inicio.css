@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-image: url(https://drive.google.com/u/1/uc?id=1jLhNX1URctzbfZ5eqBsXgtvhFKP_jm2T&export=download);
+    background-color: rgba(38, 38, 248, 0.5); /* Definindo a cor azul com transparência */
+    background-size: cover;
+    height: 600px; /* Defina a altura desejada para o nav */
+    padding: 20px; /* Espaçamento interno */
+    font-size: larger;
+  }
+  
+  .btn1{
+    padding: 8px; 
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255); 
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center; 
+  }
+
+  .logo img {
+    position: absolute;
+    top: 0px;
+    margin-left: 60px;
+    height: 100px; /* Defina a altura desejada para a logo */
+  }
+  
+  .links{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px; /* Espaçamento horizontal entre os links */
+  }
+
+  .links li a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 40px;
+    transition: border-bottom 0.3s ease; /* Adicionando uma transição suave para a borda inferior */
+  }
+  
+  .links li a:hover {
+    content: '';
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .5s;
+
+    border-bottom: 2px solid #fff; /* Alterando a cor da borda inferior quando o cursor passar por cima */
+  } 
+
+  .p001{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    top: 250px;
+    margin-left: 70px;
+    color: #fff;
+  }
+
+  .h002{
+    position: absolute;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    top: 280px;
+    margin-left: 70px;
+    color: #fff;
+  }
+
+  .p002{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    top: 395px;
+    margin-left: 70px;
+    color: #fff;
+  }
