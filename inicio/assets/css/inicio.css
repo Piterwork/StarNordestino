@@ -4,7 +4,7 @@
 }
 
 nav {
-    background-image: url(/inicio/assets/img/fundo_header_inicio.png);
+    background-image: url(../img/fundo_header_inicio.png);
     background-color: rgba(38, 38, 248, 0.5); /* Definindo a cor azul com transparência */
     background-size: cover;
     height: 600px; /* Defina a altura desejada para o nav */
