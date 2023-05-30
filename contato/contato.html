@@ -45,14 +45,19 @@
         </div>
         
         <div>
-            <form action="#">
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome">
-                <label for="email">Endereço de Email:</label>
-                <input type="text" name="email" id="email">
-                <label for="areatexto">Mensagem:</label>
-                <input type="text" name="areatexto" id="areatexto">
-                <input type="submit" value="Enviar">
+            <form action="../data_base/insert_suporte.php" method="post">
+
+                <label for="nome_suporte">Nome:</label>
+                <input type="text" name="nome_suporte" id="nome_suporte">
+
+                <label for="email_suporte">Endereço de Email:</label>
+                <input type="text" name="email_suporte" id="email_suporte">
+
+                <label for="mensagem_suporte">Mensagem:</label>
+                <input type="text" name="mensagem_suporte" id="mensagem_suporte">
+
+                <input type="submit" name="clicou" value="Enviar">
+
             </form>
         </div>
 
