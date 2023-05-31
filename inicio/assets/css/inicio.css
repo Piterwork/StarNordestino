@@ -22,6 +22,11 @@ nav {
     text-align: center; 
   }
 
+  .btn1:hover {
+    background-color: #0056b3;
+  }
+
+
   .logo img {
     position: absolute;
     top: 0px;
@@ -84,21 +89,25 @@ nav {
     font-size: large;
     position: absolute;
     top: 700px;
-    margin-left: 50%;
+    margin-left: 968px;
     color: white;
     border: none;
     padding: 8px; 
     border-radius: 8px;
-    background-color: rgb(0, 238, 255); 
+    background-color: rgb(24, 206, 206);
     font-family: Arial, Helvetica, sans-serif; 
     text-align: center; 
+  }
+
+  .agendar:hover{
+    background-color: #0056b3;
   }
 
   .deslizar{
     font-size: large;
     position: absolute;
-    top: 700px;
-    margin-left: 50%;
+    top: 860px;
+    margin-left: 940px;
     color: white;
     border: none;
     padding: 8px; 
@@ -107,3 +116,53 @@ nav {
     text-align: center; 
  
   }
+
+  .deslize{
+    position: absolute;
+    top: 900px;
+    margin-left: 1000px;
+
+  }
+
+  .texto1{
+    position: absolute;
+    margin-left: 35%;
+    top: 1000px;
+  }
+  
+  .texto2{
+    font-size: x-large;
+    position: absolute;
+    margin-left: 10%;
+    top: 1100px;
+  }
+
+  .texto3{
+    font-size: larger;
+    position: absolute;
+    margin-left: 10%;
+    top: 1150px;
+  }
+   
+  .explore{
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: rgb(24, 206, 206);
+    color: #fff;
+    position: absolute;
+    margin-left: 25%;
+    top: 1300px;
+  }
+
+
+  .cama{
+    height: 250px;
+    width: 400px;
+    font-size: larger;
+    position: absolute;
+    margin-left: 800px;
+    top: 1100px;
+  
+  }
+  
