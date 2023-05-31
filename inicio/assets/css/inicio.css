@@ -131,17 +131,17 @@ nav {
   }
   
   .texto2{
-    font-size: x-large;
+    font-size: xx-large;
     position: absolute;
     margin-left: 10%;
-    top: 1100px;
+    top: 1200px;
   }
 
   .texto3{
-    font-size: larger;
+    font-size: x-large;
     position: absolute;
     margin-left: 10%;
-    top: 1150px;
+    top: 1250px;
   }
    
   .explore{
@@ -152,17 +152,48 @@ nav {
     color: #fff;
     position: absolute;
     margin-left: 25%;
-    top: 1300px;
+    top: 1430px;
   }
 
 
   .cama{
-    height: 250px;
-    width: 400px;
-    font-size: larger;
+    height: 400px;
+    width: 600px;
     position: absolute;
-    margin-left: 800px;
-    top: 1100px;
-  
+    margin-left: 850px;
+    top: 1150px;
   }
   
+
+  .texto4{
+    font-size: xx-large;
+    position: absolute;
+    margin-left: 10%;
+    top: 1750px;
+  }
+
+  .texto5{
+    font-size: x-large;
+    position: absolute;
+    margin-left: 10%;
+    top: 1800px;
+  }
+   
+  .praia{
+    height: 400px;
+    width: 600px;
+    position: absolute;
+    margin-left: 765px;
+    top: 1700px;
+  }
+
+  .explore2{
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: rgb(24, 206, 206);
+    color: #fff;
+    position: absolute;
+    margin-left: 25%;
+    top: 1960px;
+  }
