@@ -7,15 +7,17 @@ nav {
     background-image: url(../img/fundo_header_inicio.png);
     background-color: rgba(38, 38, 248, 0.5); /* Definindo a cor azul com transparência */
     background-size: cover;
-    height: 600px; /* Defina a altura desejada para o nav */
+    height: 900px; /* Defina a altura desejada para o nav */
     padding: 20px; /* Espaçamento interno */
     font-size: larger;
   }
   
   .btn1{
+    color: white;
+    border: none;
     padding: 8px; 
     border-radius: 8px;
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(0, 238, 255); 
     font-family: Arial, Helvetica, sans-serif; 
     text-align: center; 
   }
@@ -55,7 +57,7 @@ nav {
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
-    top: 250px;
+    top: 300px;
     margin-left: 70px;
     color: #fff;
   }
@@ -64,7 +66,7 @@ nav {
     position: absolute;
     font-family:'Times New Roman', Times, serif;
     font-size: 50px;
-    top: 280px;
+    top: 330px;
     margin-left: 70px;
     color: #fff;
   }
@@ -73,7 +75,35 @@ nav {
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
-    top: 395px;
+    top: 450px;
     margin-left: 70px;
     color: #fff;
+  }
+
+  .agendar{
+    font-size: large;
+    position: absolute;
+    top: 700px;
+    margin-left: 50%;
+    color: white;
+    border: none;
+    padding: 8px; 
+    border-radius: 8px;
+    background-color: rgb(0, 238, 255); 
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center; 
+  }
+
+  .deslizar{
+    font-size: large;
+    position: absolute;
+    top: 700px;
+    margin-left: 50%;
+    color: white;
+    border: none;
+    padding: 8px; 
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center; 
+ 
   }
