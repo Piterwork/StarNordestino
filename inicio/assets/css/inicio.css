@@ -5,7 +5,7 @@
 
 nav {
     background-image: url(../img/fundo_header_inicio.png);
-    background-color: rgba(38, 38, 248, 0.5); /* Definindo a cor azul com transparência */
+    background-color: rgba(20, 39, 74, 0.5); /* Definindo a cor azul com transparência */
     background-size: cover;
     height: 900px; /* Defina a altura desejada para o nav */
     padding: 20px; /* Espaçamento interno */
@@ -13,11 +13,11 @@ nav {
   }
   
   .btn1{
-    color: white;
+    color: #ffffff;
     border: none;
     padding: 6px 18px; 
     border-radius: 8px;
-    background-color: rgb(0, 238, 255); 
+    background-color: #75C9C7; 
     font-family: Arial, Helvetica, sans-serif; 
     text-align: center; 
   }
@@ -43,7 +43,7 @@ nav {
   }
 
   .links li a{
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     margin-right: 40px;
     transition: border-bottom 0.3s ease; /* Adicionando uma transição suave para a borda inferior */
@@ -55,7 +55,7 @@ nav {
     transform: scaleX(0);
     transition: transform .5s;
 
-    border-bottom: 2px solid #fff; /* Alterando a cor da borda inferior quando o cursor passar por cima */
+    border-bottom: 2px solid #ffffff; /* Alterando a cor da borda inferior quando o cursor passar por cima */
   }
 
   .p001{
@@ -64,7 +64,7 @@ nav {
     font-size: x-large;
     top: 300px;
     margin-left: 70px;
-    color: #fff;
+    color: #ffffff;
   }
 
   .h002{
@@ -94,7 +94,7 @@ nav {
     border: none;
     padding: 12px 15px; 
     border-radius: 8px;
-    background-color: rgb(24, 206, 206);
+    background-color: #75C9C7;
     font-family: Arial, Helvetica, sans-serif; 
     text-align: center; 
   }
@@ -148,7 +148,7 @@ nav {
     border: none;
     border-radius: 8px;
     padding: 8px;
-    background-color: rgb(24, 206, 206);
+    background-color: #75C9C7;
     color: #fff;
     position: absolute;
     margin-left: 25%;
@@ -191,7 +191,7 @@ nav {
     border: none;
     border-radius: 8px;
     padding: 8px;
-    background-color: rgb(24, 206, 206);
+    background-color: #75C9C7; 
     color: #fff;
     position: absolute;
     margin-left: 25%;
