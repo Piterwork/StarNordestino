@@ -1,223 +1,229 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-nav {
-    background-image: url(../img/fundo_header_inicio.png);
-    background-color: rgba(20, 39, 74, 0.5); /* Definindo a cor azul com transparência */
-    background-size: cover;
-    height: 900px; /* Defina a altura desejada para o nav */
-    padding: 20px; /* Espaçamento interno */
-    font-size: larger;
-  }
+body {
+  background-image: url(../img/fundo_header_inicio.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* width: 100%; */
+  background-position: 0px -100px;
+}
+
+header nav {
+  padding-top: 2%;
+  font-size: 25px;
+}  
+
+.btn1{
+  color: #ffffff;
+  border: none;
+  padding: 5px 20px; 
+  border-radius: 6px;
+  background-color: #75C9C7; 
+  font-family: Arial, Helvetica, sans-serif; 
+  text-align: center; 
+}
+
+.btn1:hover {
+  background-color: #83e2e1;
+}
+
+
+.logo img {
+  position: absolute;
+  top: 0px;
+  margin-left: 100px;
+  height: 140px; /* Defina a altura desejada para a logo */
+}
+
+.links{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px; /* Espaçamento horizontal entre os links */
+}
+
+.links li a{
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 40px;
+  transition: border-bottom 0.3s ease; /* Adicionando uma transição suave para a borda inferior */
+}
+
+.efeitonav:hover {
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform .5s;
+
+  border-bottom: 2px solid #ffffff; /* Alterando a cor da borda inferior quando o cursor passar por cima */
+}
+
+.p001{
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  top: 320px;
+  margin-left: 90px;
+  color: #ffffff;
+}
+
+.h002{
+  position: absolute;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 50px;
+  top: 350px;
+  margin-left: 90px;
+  color: #fff;
+}
+
+.p002{
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  top: 470px;
+  margin-left: 90px;
+  color: #fff;
+}
+
+.agendar{
+  display: flex;
+  position: absolute;
+  top: 77%;
+  margin-left: 50%;
+  translate: -50%;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  background-color: #75C9C7; 
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.agendar a {
+  display: flex;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.agendar p {
+  margin-left: 9px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.agendar img {
+  height: 20px;
+}
+
+
+.agendar:hover{
+  background-color: #83e2e1;
+}
+
+.scroll{
+  display: flex;
+  text-align: center;
+  font-size: large;
+  position: absolute;
+  top: 87%;
+  margin-left: 50%;
+  translate: -50%;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.scroll a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.scroll img {
+  height: 60px;
+  padding: 10px 0px 0px 0px;
+}
+
+.texto1{
+  position: absolute;
+  margin-left: 35%;
+  top: 1000px;
+}
+
+.texto2{
+  font-size: xx-large;
+  position: absolute;
+  margin-left: 10%;
+  top: 1200px;
+}
+
+.texto3{
+  font-size: x-large;
+  position: absolute;
+  margin-left: 10%;
+  top: 1250px;
+}
   
-  .btn1{
-    color: #ffffff;
-    border: none;
-    padding: 6px 18px; 
-    border-radius: 6px;
-    background-color: #75C9C7; 
-    font-family: Arial, Helvetica, sans-serif; 
-    text-align: center; 
-  }
-
-  .btn1:hover {
-    background-color: #83e2e1;
-  }
+.explore{
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: #75C9C7;
+  color: #fff;
+  position: absolute;
+  margin-left: 25%;
+  top: 1430px;
+}
 
 
-  .logo img {
-    position: absolute;
-    top: 0px;
-    margin-left: 60px;
-    height: 100px; /* Defina a altura desejada para a logo */
-  }
+.cama{
+  height: 400px;
+  width: 600px;
+  position: absolute;
+  margin-left: 850px;
+  top: 1150px;
+}
+
+
+.texto4{
+  font-size: xx-large;
+  position: absolute;
+  margin-left: 10%;
+  top: 1750px;
+}
+
+.texto5{
+  font-size: x-large;
+  position: absolute;
+  margin-left: 10%;
+  top: 1800px;
+}
   
-  .links{
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 12px; /* Espaçamento horizontal entre os links */
-  }
+.praia{
+  height: 400px;
+  width: 600px;
+  position: absolute;
+  margin-left: 765px;
+  top: 1700px;
+}
 
-  .links li a{
-    color: #ffffff;
-    text-decoration: none;
-    margin-right: 40px;
-    transition: border-bottom 0.3s ease; /* Adicionando uma transição suave para a borda inferior */
-  }
+.explore2{
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: #75C9C7; 
+  color: #fff;
+  position: absolute;
+  margin-left: 25%;
+  top: 1960px;
+}
 
-  .efeitonav:hover {
-    transform-origin: left;
-    transform: scaleX(0);
-    transition: transform .5s;
-
-    border-bottom: 2px solid #ffffff; /* Alterando a cor da borda inferior quando o cursor passar por cima */
-  }
-
-  .p001{
-    position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
-    top: 300px;
-    margin-left: 70px;
-    color: #ffffff;
-  }
-
-  .h002{
-    position: absolute;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 50px;
-    top: 330px;
-    margin-left: 70px;
-    color: #fff;
-  }
-
-  .p002{
-    position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
-    top: 450px;
-    margin-left: 70px;
-    color: #fff;
-  }
-
-  .agendar{
-    display: flex;
-    position: absolute;
-    top: 77%;
-    margin-left: 50%;
-    translate: -50%;
-    color: #ffffff;
-    border: none;
-    border-radius: 6px;
-    background-color: #75C9C7; 
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .agendar a {
-    display: flex;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 11px 16px;
-  }
-
-  .agendar p {
-    margin-left: 9px;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: bold;
-  }
-
-  .agendar img {
-    height: 20px;
-  }
-  
-
-  .agendar:hover{
-    background-color: #83e2e1;
-  }
-
-  .scroll{
-    display: flex;
-    text-align: center;
-    font-size: large;
-    position: absolute;
-    top: 87%;
-    margin-left: 50%;
-    translate: -50%;
-    border: none;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .scroll a {
-    text-decoration: none;
-    color: #ffffff;
-  }
-
-  .scroll img {
-    height: 60px;
-    padding: 10px 0px 0px 0px;
-  }
-
-  .texto1{
-    position: absolute;
-    margin-left: 35%;
-    top: 1000px;
-  }
-  
-  .texto2{
-    font-size: xx-large;
-    position: absolute;
-    margin-left: 10%;
-    top: 1200px;
-  }
-
-  .texto3{
-    font-size: x-large;
-    position: absolute;
-    margin-left: 10%;
-    top: 1250px;
-  }
-   
-  .explore{
-    border: none;
-    border-radius: 8px;
-    padding: 8px;
-    background-color: #75C9C7;
-    color: #fff;
-    position: absolute;
-    margin-left: 25%;
-    top: 1430px;
-  }
-
-
-  .cama{
-    height: 400px;
-    width: 600px;
-    position: absolute;
-    margin-left: 850px;
-    top: 1150px;
-  }
-  
-
-  .texto4{
-    font-size: xx-large;
-    position: absolute;
-    margin-left: 10%;
-    top: 1750px;
-  }
-
-  .texto5{
-    font-size: x-large;
-    position: absolute;
-    margin-left: 10%;
-    top: 1800px;
-  }
-   
-  .praia{
-    height: 400px;
-    width: 600px;
-    position: absolute;
-    margin-left: 765px;
-    top: 1700px;
-  }
-
-  .explore2{
-    border: none;
-    border-radius: 8px;
-    padding: 8px;
-    background-color: #75C9C7; 
-    color: #fff;
-    position: absolute;
-    margin-left: 25%;
-    top: 1960px;
-  }
-
-  ::-webkit-scrollbar {
-    width: 0px;
-  }
+::-webkit-scrollbar {
+  width: 0px;
+}
