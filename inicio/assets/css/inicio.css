@@ -48,15 +48,15 @@ nav {
     margin-right: 40px;
     transition: border-bottom 0.3s ease; /* Adicionando uma transição suave para a borda inferior */
   }
-  
-  .links li a:hover {
+
+  .efeitonav:hover {
     content: '';
     transform-origin: left;
     transform: scaleX(0);
     transition: transform .5s;
 
     border-bottom: 2px solid #fff; /* Alterando a cor da borda inferior quando o cursor passar por cima */
-  } 
+  }
 
   .p001{
     position: absolute;
