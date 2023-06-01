@@ -16,7 +16,7 @@ nav {
     color: #ffffff;
     border: none;
     padding: 6px 18px; 
-    border-radius: 8px;
+    border-radius: 6px;
     background-color: #75C9C7; 
     font-family: Arial, Helvetica, sans-serif; 
     text-align: center; 
@@ -85,31 +85,51 @@ nav {
   }
 
   .agendar{
-    font-size: large;
+    display: flex;
     position: absolute;
-    top: 75%;
+    top: 77%;
     margin-left: 50%;
+    translate: -50%;
     color: #ffffff;
     border: none;
-    padding: 12px 15px; 
-    border-radius: 8px;
+    border-radius: 6px;
     background-color: #75C9C7; 
-    font-family: Arial, Helvetica, sans-serif; 
-    text-align: center;
-    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
   }
+
+  .agendar a {
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 11px 16px;
+  }
+
+  .agendar p {
+    margin-left: 9px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  .agendar img {
+    height: 20px;
+  }
+  
 
   .agendar:hover{
     background-color: #83e2e1;
   }
 
   .scroll{
+    display: flex;
     text-align: center;
     font-size: large;
     position: absolute;
-    top: 84%;
+    top: 87%;
     margin-left: 50%;
-    translate: 45%;
+    translate: -50%;
     border: none;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -120,6 +140,7 @@ nav {
   }
 
   .scroll img {
+    height: 60px;
     padding: 10px 0px 0px 0px;
   }
 
