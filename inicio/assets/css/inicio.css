@@ -197,3 +197,7 @@ nav {
     margin-left: 25%;
     top: 1960px;
   }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
