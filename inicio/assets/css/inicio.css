@@ -360,7 +360,6 @@ header nav {
   border-left: 130px dotted transparent;
   border-right: 130px solid transparent;
   border-bottom: 100px solid #14274A;
-
   margin: 2472px 50% 0px 50%;
 }
 
@@ -384,10 +383,6 @@ header nav {
   align-items: center;
 }
 
-.secao_one div {
-
-}
-
 .secao_one h2 {
   font-size: 25px;
   letter-spacing: 0.1rem;
@@ -409,10 +404,6 @@ header nav {
   margin: 0px 120px;
   align-items: center;
   justify-content: center;
-}
-
-.secao_two div {
-
 }
 
 .secao_two a {
@@ -465,10 +456,6 @@ header nav {
 
 .secao_for .div_label {
   background-color: red;
-}
-
-.secao_for .div_email {
-
 }
 
 .secao_for #button { 
