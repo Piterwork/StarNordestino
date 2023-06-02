@@ -161,19 +161,23 @@ header nav {
 
 /* MAIN 👇👇👇 */
 
-.flex-contenier h2{
-  position: absolute;
-  margin-left: 50%;
-  translate: -50%;
-  top: 1040px;
-  font-size: 30px;
-}
-
 .flex-contenier {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.flex-contenier h2{
+  display: inline-block;
+  text-align: center;
+  /* background-color: red; */
+  width: 1200px;
+  position: absolute;
+  top: 1060px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-family: Helvetica, sans-serif;
 }
 
 .div_contenier_one{
