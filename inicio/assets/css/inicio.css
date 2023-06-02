@@ -181,15 +181,17 @@ header nav {
   top: 1430px;
 }
 
+.explore:hover{
+  background-color: #0056b3;
+}
 
 .cama{
   height: 400px;
   width: 600px;
   position: absolute;
-  margin-left: 850px;
+  margin-left: 800px;
   top: 1150px;
 }
-
 
 .texto4{
   font-size: xx-large;
@@ -209,7 +211,7 @@ header nav {
   height: 400px;
   width: 600px;
   position: absolute;
-  margin-left: 765px;
+  margin-left: 800px;
   top: 1700px;
 }
 
@@ -224,6 +226,153 @@ header nav {
   top: 1960px;
 }
 
+.explore2:hover{
+  background-color: #0056b3;
+}
+
 ::-webkit-scrollbar {
   width: 0px;
+}
+
+
+
+.comentarios{
+  font-size: xx-large;
+  position: absolute;
+  top: 2200px;
+  margin-left: 900px;
+
+}
+
+.calmo{
+  font-size: larger;
+  position: absolute;
+  top: 2255px;
+  margin-left: 790px;
+
+}  
+
+.calmo1{
+  font-size: larger;
+  position: absolute;
+  top: 2280px;
+  margin-left: 910px;
+
+}
+
+.setas{
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: rgb(24, 206, 206);
+  color: #fff;
+  position: absolute;
+  margin-left: 980px;    
+  top: 2340px;
+}
+
+.setas:hover{
+  background-color: #0056b3;
+}
+
+.setas1{
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: rgb(24, 206, 206);
+  color: #fff;
+  position: absolute;
+  margin-left: 1020px;
+  top: 2340px;
+}
+
+.setas1:hover{
+  background-color: #0056b3;
+}
+
+
+
+footer{
+  position: absolute;
+  top: 2480px;
+  width: 100%;
+  height: 30%;
+  background-color:#14274A;
+  color: white;
+}
+
+/*Segunda coluna de texto do footer*/
+
+.txt-footer{
+  padding: 50px;
+  margin-left: 70px;
+}
+
+.txt1f{
+position: absolute;
+top: 80px;
+}
+
+.txt2f{
+position: absolute;
+top: 150px;
+}
+
+.txt3f{
+position: absolute;
+top: 170px;
+}
+
+.txt4f{
+position: absolute;
+top: 200px;
+}
+
+
+/*Segunda coluna de texto do footer*/
+
+
+.txt5f{
+  color: white;
+  position: absolute;
+  margin-left: 690px;
+  top: 120px;
+  }
+  
+  .txt6f{
+  color: white;
+  position: absolute;
+  margin-left: 690px ;
+  top: 150px;
+  }
+  
+  .txt7f{
+  color: white;
+  position: absolute;
+  margin-left: 690px ;
+  top: 180px;
+  }
+  
+.logos{
+  position: absolute;
+  margin-left: 690px ;
+  top: 130px;
+}
+
+.face{
+  position: absolute;
+  color: white;
+  top: 120px;
+}
+
+.tt{
+  position: absolute;
+  color: white;
+  top: 150px;
+}
+
+.insta{
+  position: absolute;
+  color: white;
+  top: 180px;
 }
