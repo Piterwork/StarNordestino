@@ -4,43 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAGINA LOGIN</title>
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div>
+   <div>
 
-        <img src="./assets/img/fundo_login.png" alt="fundo_login">
+        <img src="./assets/img/fundo_login.png" alt="fundo_login" class="fotofundo">
 
         <header>
-            <h1>Login</h1>
-            <img src="../icones_logos/logo.png" alt="logo_star_nordestino">
+            <form action="../data_base/search_login.php" method="post">
+
+
+       <img src="../icones_logos/logo.png" alt="logo_star_nordestino" class="logo">
         </header>
 
-        <div>        
-            <form action="../data_base/search_login.php" method="post">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="email@gmail.com">
 
-                <Label for="senha">Senha</Label>
-                <input type="password" name="senha" id="senha" placeholder="senha">
+    <fieldset>
 
-                <input type="submit" name="clicou" value="Entrar">
+    <h1>Login</h1>
 
+            
+                <p><label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="exemplo@gmail.com"></p><br><br>
+
+                <p><Label for="senha">Senha</Label>
+                <input type="password" name="senha" id="senha" placeholder="senha"></p>
+
+                <p><input type="submit" name="clicou" value="Entrar" class="entrar"></p>
+            </fieldset>
             </form>
-            <a href="#">Esqueceu a Senha?</a>
-        </div>
+            <a href="#" class="forgot">Esqueceu a Senha?</a>
+
+
 
         <p>contunuar com</p>
 
         <div>
-            <a href="#"><img src="../icones_logos/google.png" alt="logo_google"></a>
-            <a href="#"><img src="../icones_logos/github.png" alt="logo_github"></a>
-            <a href="#"><img src="../icones_logos/facebook.png" alt="logo_facebook"></a>
+            <button><a href="#"><img src="../icones_logos/google.png" alt="logo_google"></a></button>
+            <button><a href="#"><img src="../icones_logos/github.png" alt="logo_github"></a></button>
+            <button><a href="#"><img src="../icones_logos/facebook.png" alt="logo_facebook"></a></button>
         </div>
 
         <p>Ainda não possui uma conta?</p>
         <a href="#">Cadastre-se</a>
 
     </div>
+
+
 </body>
 </html>
