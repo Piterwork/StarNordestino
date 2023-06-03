@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.logo{
+position: absolute;
+height: 100px;
+width: 100px;
+top:1px;
+margin-left:100px;
+}
+
+.fotofundo{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+p{
+    color: white;
+}
+
+input{
+    position:absolute;
+    top: 90%;
+    padding: 4px;
+    border: none;
+    border-radius: ;
+}
+
+fieldset{
+    background-color: rgba(0, 0, 255, 0.418);
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 8px;
+}
+
+h1{
+    color: white;
+    margin-left: 20px;
+}
+
+
