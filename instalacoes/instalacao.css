@@ -175,5 +175,99 @@
   }
 
   .academia{
-    margin: 10%;
+    position: absolute;
+    top: 150%;
+    margin-left: 15%;
+  }  
+  
+  .bar{
+    position: absolute;
+    top: 150%;
+    margin-left: 55%;
+  }  
+  
+  .spa{
+    position: absolute;
+    top: 210%;
+    margin-left: 15%;
   }
+
+  .piscina{
+    position: absolute;
+    top: 210%;
+    margin-left: 55%;
+  }  
+  
+  .lavanderia{
+    position: absolute;
+    top: 270%;
+    margin-left: 15%;
+  }  
+  
+  .restaurante{
+    position: absolute;
+    top: 270%;
+    margin-left: 55%;
+  }
+
+
+  .h01{
+    color: black;
+    border: solid 2px;
+    border-color: white;
+    border-radius: 2px;
+    position: absolute;
+    top: 150%;
+    margin-left: 15%;
+  }  
+  
+  .h02{
+    color: black;
+    border: solid 2px;
+    border-color: white;
+    border-radius: 2px;
+    position: absolute;
+    top: 150%;
+    margin-left: 55%;
+  }  
+  
+  .h03{
+    color: black;
+    border: solid 2px;
+    border-color: white;
+    border-radius: 2px;
+    position: absolute;
+    top: 210%;
+    margin-left: 15%;
+  }
+
+  .h04{
+    color: black;
+    border: solid 2px;
+    border-color: white;
+    border-radius: 2px;
+    position: absolute;
+    top: 210%;
+    margin-left: 55%;
+  }  
+  
+  .h05{
+    color: black;
+    border: solid 2px;
+    border-color: white;
+    border-radius: 2px;
+    position: absolute;
+    top: 270%;
+    margin-left: 15%;
+  }  
+  
+  .h06{
+    color: black;
+    border: solid 2px;
+    border-color: white;
+    border-radius: 2px;
+    position: absolute;
+    top: 270%;
+    margin-left: 55%;
+  }
+
