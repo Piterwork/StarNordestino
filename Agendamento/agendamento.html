@@ -4,52 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>PAGINA AGENDAMENTO</title>
 </head>
 <body>
-    <div>
 
-        <img src="./assets/img/fundo_agendamendo.png" alt="fundo_agendamendo">
-
-        <header>
-            <h1>Agendamento</h1>
-            <img src="../icones_logos/logo.png" alt="logo_star_nordestino">
-        </header>
-
-        <div>
-            <form action="../data_base/insert_agendamento.php" method="post">
-
-                <label for="acomodacao">Acomodacão</label>
-                <input type="text" id="acomodacao" name="acomodacao">
-
-                <label for="number_adultos">Adultos</label>
-                <input type="number" id="number_adultos" name="number_adultos">
-
-                <label for="number_criancas">Crianças</label>
-                <input type="number" id="number_criancas" name="number_criancas">
-
-                <label for="date_entrada">Data de Entrada</label>
-                <input type="date" id="date_entrada" name="date_entrada">
-
-                <label for="date_saida">Data de Saída</label>
-                <input type="date" id="date_saida" name="date_saida">
-
-                <label for="number_quartos">Nº. de Quartos</label>
-                <input type="number" id="number_quartos" name="number_quartos">
-
-                <input type="submit" name="cliclou" value="Confirmar Estadia">
-
-            </form>
-        </div>
-
-        <p>Formas de Pagamento</p>
-
-        <div>
-            <a href="#"><img src="../icones_logos/dinheiro.png" alt="icone_dinheiro"></a>
-            <a href="#"><img src="../icones_logos/cartao_credito.png" alt="icone_cartao_credito"></a>
-            <a href="#"><img src="../icones_logos/paypal.png" alt="icone_paypal"></a>
-        </div>
-        
+    <div class="backgraud" alt="fundo_cadastro">
+        <div class="filtro_backgraud"></div>
     </div>
+
+    <div class="caixa-trasparente">
+        <div class="DentroDaCaixa ">
+
+            <header class="header-caixa-trasparente">
+
+                <div class="h1">
+                    <h1>Agendamento</h1>
+                </div>
+
+                <div class="logo-star-nordestino">
+                    <img id="logo-star-nordestino" src="../icones_logos/logo.png" alt="logo_StarNordestino">
+                </div>
+
+            </header>
+
+            <div class="div-formulario">
+                <form action="../data_base/insert_cadastro.php" method="post">
+
+                    <label class="label" for="nome_usuario">Nome:</label>
+                    <br>
+                    <input type="text" name="nome_usuario" id="nome_usuario" placeholder="Rubens Varsconcellos">
+
+                    <br>
+                    <br>
+
+                    <label class="label" for="email">Email:</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="email@gmail.com">
+
+                    <br>
+                    <br>
+
+                    <Label class="label" for="senha">Senha:</Label>
+                    <br>
+                    <input type="password" name="senha" id="senha" placeholder="senha">
+
+                    <br>
+                    <br>
+
+                    <input id="button-cadastrar" type="submit" value="Cadastrar">
+
+                </form>
+            </div>
+
+            <p class="continuar_com">contunuar com</p>
+
+            <div class="contenier-footer">
+
+                    <div class="button-footer">
+                        <a href="#"><img src="../icones_logos/google.png" alt="logo_google"></a>
+                    </div>
+
+                    <div class="button-footer">
+                        <a href="#"><img src="../icones_logos/github.png" alt="logo_github"></a>
+                    </div>
+
+                    <div class="button-footer">
+                        <a href="#"><img src="../icones_logos/facebook.png" alt="logo_facebook"></a>
+                    </div>
+
+            </div>
+
+            <div class="textos-footer">
+                <div>
+                    <p>Já possui uma conta?</p>
+                </div>
+                <div>
+                    <a href="../login/login.html">Fazer Login</a>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+        
 </body>
 </html>
