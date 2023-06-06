@@ -423,15 +423,17 @@ html, body {
   background-color:#14274A;
   color: white;
   align-items: center;
+  justify-content: space-between;
 }
 
 .secao_one {
   display: flex;
   /* background-color: red; */
   height: 130px;
-  width: 250px;
-  margin: 0px 120px;
+  width: 270px;
   align-items: center;
+  justify-content: center;
+  margin-left: 6%;
 }
 
 .secao_one h2 {
@@ -450,9 +452,8 @@ html, body {
   display: flex;
   /* background-color: pink; */
   height: 130px;
-  width: 250px;
+  width: 270px;
   letter-spacing: 0.1rem;
-  margin: 0px 120px;
   align-items: center;
   justify-content: center;
 }
@@ -468,9 +469,8 @@ html, body {
   display: flex;
   /* background-color: green; */
   height: 130px;
-  width: 250px;
+  width: 270px;
   letter-spacing: 0.1rem;
-  margin: 0px 120px;
   align-items: center;
   justify-content: center;
 }
@@ -494,20 +494,50 @@ html, body {
 
 .secao_for {
   display: flex;
-  background-color: rgb(9, 114, 26);
+  /* background-color: rgb(9, 114, 26); */
   height: 130px;
-  width: 250px;
-  margin: 0px 120px;
+  width: 270px;
   letter-spacing: 0.1rem;
   font-size: large;
   align-items: center;
   justify-content: center;
+  margin-right: 6%;
 }
 
-.secao_for .div_label {
-  background-color: red;
+.div_label {
+  display: flex;
+  /* background-color: red; */
+  width: 100%;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 7%;
 }
 
-.secao_for #button { 
+.div_email{
+  display: flex;
+  /* background-color: orange; */
+  border-style: none;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4%;
+}
+
+#email {
+  display: inline;
+  border: 2px solid #75C9C7;
+  height: 45px;
+  width: 220px;
+  background-color: #14274A;
+  color: white;
+  padding: 7px;
+  border-radius: 4px 0px 0px 4px;  
+}
+
+#button {
+  border-style: none;
   background-color: #75C9C7;
+  height: 45px;
+  width: 50px;
+  border-radius: 0px 4px 4px 0px ;
 }
