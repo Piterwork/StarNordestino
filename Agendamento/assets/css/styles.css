@@ -82,8 +82,9 @@ body {
 .div-formulario {
     /* background-color: rgb(114, 78, 23); */
     width: auto;
-    height: 50%;
+    height: 44%;
     justify-content: center;
+    margin-top: 2%;
 }
 
 .div-formulario input {
@@ -104,26 +105,28 @@ body {
     padding-bottom: 1%;
 }
 
-#button-cadastrar {
+#button-confirmar {
     display: inline-block;
     background-color: #14274A;
     color: #f7f7f7;
     font-size: large;
     height: 50px;
-    margin-top: 2%;
+    margin-top: 4%;
 }
 
-#button-cadastrar:hover {
+#button-confirmar:hover {
     background-color: #14387c;
     cursor: pointer;
 }
 
-.continuar_com {
+#descricao_footer {
+    color: #f7f7f7;
     display: inline-block;
     margin-left: 50%;
     translate: -50%;
     font-size: 19px;
-    margin-top: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .contenier-footer {
@@ -132,7 +135,7 @@ body {
     /* background-color: red; */
     justify-content: space-between;
     align-items: center;
-    margin: 4% 0%;
+    margin: 6% 0%;
 }
 
 .contenier-footer img {
@@ -148,24 +151,3 @@ body {
 .button-footer {
     display: flex;
 }
-
-.textos-footer {
-    display: flex;
-    /* background-color: red; */
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    margin-top: 4%;
-}
-
-.textos-footer div {
-    /* background-color: #14387c; */
-    width: 180px;
-    font-size: 19px;
-}
-
-.textos-footer a {
-    color: white;
-    text-decoration: none;
-}
-
