@@ -133,41 +133,20 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 4% 0%;
-
 }
 
 .contenier-footer img {
     width: 25px;
 }
 
-.button-google {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    width: 145px;
-    height: 45px;
+.contenier-footer a {
+    padding:8px 60px;
     background-color: white;
+    border-radius: 8px;
 }
 
-.button-github {
+.button-footer {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    width: 145px;
-    height: 45px;
-    background-color: white;
-}
-
-.button-facebook {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    width: 145px;
-    height: 45px;
-    background-color: white;
 }
 
 .textos-footer {
