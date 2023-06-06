@@ -28,8 +28,8 @@ html, body {
 position: absolute;
 height: 100px;
 width: 100px;
-top:1px;
-margin-left:100px;
+top:120px;
+margin-left:700px;
 }
 
 
@@ -38,11 +38,9 @@ p{
 }
 
 input{
-    position:absolute;
-    top: 90%;
     padding: 4px;
     border: none;
-    border-radius: ;
+    border-radius: 8px;
 }
 
 fieldset{
@@ -52,13 +50,49 @@ fieldset{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 40px;
+    padding: 80px;
     border-radius: 8px;
 }
 
 h1{
     color: white;
-    margin-left: 20px;
 }
 
+.enviar{
+font-size: larger;
+padding: 10px;
+background-color: aqua;
+color: white;
 
+}
+
+.ainda{
+    position: absolute;
+    top: 320px;
+    margin-left: 500px;
+}
+
+.cadastre{
+    position: absolute;
+    top: 320px;
+    margin-left: 685px;
+}
+
+.face{
+    position: absolute;
+    top: 435px;
+    left: 685px;
+}
+
+.git{
+    position: absolute;
+    top: 400px;
+    left: 685px;
+}
+
+.google{
+    size: 15px;
+    position: absolute;
+    top: 470px;
+    left: 685px;
+}
