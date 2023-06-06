@@ -82,9 +82,75 @@ body {
 .div-formulario {
     /* background-color: rgb(114, 78, 23); */
     width: auto;
-    height: 44%;
-    justify-content: center;
+    height: 45%;
     margin-top: 2%;
+}
+
+.line_one {
+    display: flex;
+    /* background-color: cornflowerblue; */
+    width: 100%; 
+    height: 30%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+}
+
+.line_two {
+    display: flex;
+    /* background-color: plum; */
+    flex-direction: row;
+    width: 100%; 
+    height: 30%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+}
+
+.div-form-one {
+    height: 100%;
+    width: 250px;
+    /* background-color: green; */
+
+}
+
+.div-form-two {
+    height: 100%;
+    width: 120px;
+    /* background-color: deeppink; */
+    
+}
+
+.div-form-three {
+    height: 100%;
+    width: 120px;
+    /* background-color: blue; */
+}
+
+.div-form-for {
+    height: 100%;
+    width: 170px;
+    /* background-color: orange; */
+}
+
+.div-form-five {
+    height: 100%;
+    width: 170px;
+    /* background-color: red; */
+}
+
+.div-form-six {
+    height: 100%;
+    width: 120px;
+    /* background-color: greenyellow; */
+}
+
+.label {
+    display: inline-block;
+    /* background-color: red; */
+    color: #f7f7f7;
+    font-size: 20px;
+    padding-bottom: 2%;
 }
 
 .div-formulario input {
@@ -97,21 +163,13 @@ body {
 
 }
 
-.label {
-    display: inline-block;
-    /* background-color: red; */
-    color: #f7f7f7;
-    font-size: 20px;
-    padding-bottom: 1%;
-}
-
 #button-confirmar {
     display: inline-block;
     background-color: #14274A;
     color: #f7f7f7;
     font-size: large;
     height: 50px;
-    margin-top: 4%;
+    margin-top: 5%;
 }
 
 #button-confirmar:hover {
@@ -120,13 +178,12 @@ body {
 }
 
 #descricao_footer {
+    /* background-color: orange; */
     color: #f7f7f7;
     display: inline-block;
-    margin-left: 50%;
     translate: -50%;
     font-size: 19px;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin: 6% 0% 0% 50%;
 }
 
 .contenier-footer {
@@ -135,7 +192,7 @@ body {
     /* background-color: red; */
     justify-content: space-between;
     align-items: center;
-    margin: 6% 0%;
+    margin-top: 9%;
 }
 
 .contenier-footer img {
