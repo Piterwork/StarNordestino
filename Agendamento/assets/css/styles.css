@@ -33,14 +33,17 @@ body {
 }
 
 .caixa-trasparente {
+    background: transparent;
+    border: 2px solid #5f82b8;
+    backdrop-filter: blur(10px);
     display: flex;
-    background-color: #5882C195;
+    background-color: #5882C172;
     border-radius: 45px;
     position: relative;
     height: 740px;
     width: 35%;
     justify-content: center;
-    align-items: center;        
+    align-items: center;         
 }
 
 .DentroDaCaixa {
