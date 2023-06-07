@@ -1,10 +1,99 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+header {
+  display: flex;
+  background-color: #14274A;
+  height: 20%;
+  align-items: center;
+}
+
+header h1 {
+  text-align: center;
+  width: 100%;
+  margin-top: 3%;
+  color: #ffffff;
+}
+
+.menu {
+  position: absolute;
+  height: 20%;
+  padding-top: 2%;
+  font-size: 25px;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* bottom: 0; */
+  margin: auto;
+}  
+
+.logo img {
+  position: absolute;
+  top: 0px;
+  margin-left: 100px;
+  height: 125px; /* Defina a altura desejada para a logo */
+}
+
+.btn1{
+  color: #ffffff;
+  border: none;
+  padding: 5px 20px; 
+  border-radius: 6px;
+  background-color: #75C9C7; 
+  font-family: Arial, Helvetica, sans-serif; 
+  text-align: center; 
+}
+
+.btn1:hover {
+  background-color: #83e2e1;
 }
 
 
+.links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px; /* Espaçamento horizontal entre os links */
+}
+
+.links li a{
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 40px;
+  transition: border-bottom 0.3s ease; /* Adicionando uma transição suave para a borda inferior */
+}
+
+.efeitonav:hover {
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform .5s;
+
+  border-bottom: 2px solid #ffffff; /* Alterando a cor da borda inferior quando o cursor passar por cima */
+}
+
+/* HEAD ☝️☝️☝️ */
+
+/* MAIN 👇👇👇 */
+
+
+
+
+
+/* MAIN ☝️☝️☝️ */
 
 /* FOOTER 👇👇👇 */
 
