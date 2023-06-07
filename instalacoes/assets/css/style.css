@@ -15,7 +15,7 @@ html, body {
 }
 
 .img_header {
-  background: url(./assets/img/fundo_header_instalacoes.png);
+  background: url(../img/fundo_header_instalacoes.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -181,130 +181,116 @@ html, body {
 
 main {
   display: flex;
+  justify-content: center;
 }
 
 .main-contenier {
-  background-color: red;
-  height: 100%;
-  width: 100%;
-  align-content: center;
-  margin: 0% 15%;
+  display: flex;
+  position: absolute;
+  margin-top: 52%;
+  /* background-color: orange; */
+  height: auto;
+  width: 75%;
+  justify-content: center;
 }
 
 .main-header {
-  margin-top: 80%;
-  background-color: orange;
+  display: block;
+  /* background-color: palevioletred; */
+  position: absolute;
+  height: auto;
+  width: 95%;
+  text-align: center;
 }
   
-  h2{
-    margin-left: 50%;
-    translate: -50%;
-    position: absolute;
-  }
+.main-header h2 {
+  padding: 4% 0%;
+  font-size: xx-large;
+}
 
-  /* .txt1{
-    font-size: larger;
-    position: absolute;
-    margin-left: 50%;
-    transform: translate(-50% , -50%);
-  }
+.main-header p {
+  font-size: 20px;
+}
 
-  .academia{
-    position: absolute;
-    top: 150%;
-    margin-left: 15%;
-  }  
-  
-  .bar{
-    position: absolute;
-    top: 150%;
-    margin-left: 55%;
-  }  
-  
-  .spa{
-    position: absolute;
-    top: 210%;
-    margin-left: 15%;
-  }
+.section-fots {
+  /* background-color: greenyellow; */
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: auto;
+  margin-top: 20%;
+  /* height: 80%; */
+  align-items: center;
+}
 
-  .piscina{
-    position: absolute;
-    top: 210%;
-    margin-left: 55%;
-  }  
-  
-  .lavanderia{
-    position: absolute;
-    top: 270%;
-    margin-left: 15%;
-  }  
-  
-  .restaurante{
-    position: absolute;
-    top: 270%;
-    margin-left: 55%;
-  }
+.contenier-fotos {
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  width: 41%;
+  align-items: center;
+  justify-content: center;
+}
 
+.rows {
+  margin: 2% 0%;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
 
-  .h01{
-    color: black;
-    border: solid 2px;
-    border-color: white;
-    border-radius: 2px;
-    position: absolute;
-    top: 150%;
-    margin-left: 15%;
-  }  
-  
-  .h02{
-    color: black;
-    border: solid 2px;
-    border-color: white;
-    border-radius: 2px;
-    position: absolute;
-    top: 150%;
-    margin-left: 55%;
-  }  
-  
-  .h03{
-    color: black;
-    border: solid 2px;
-    border-color: white;
-    border-radius: 2px;
-    position: absolute;
-    top: 210%;
-    margin-left: 15%;
-  }
+#img-config {
+  width: 100%;
+}
 
-  .h04{
-    color: black;
-    border: solid 2px;
-    border-color: white;
-    border-radius: 2px;
-    position: absolute;
-    top: 210%;
-    margin-left: 55%;
-  }  
+.main-label {
+  background-color: #ffffff;
+  font-size: 16px;
+  padding: 2% 7%;
+  translate: 0% -100%;
+  color: #14274A;
+}
+
+.main-footer {
+  margin-top: 117%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* background-color: orange; */
+  align-items: center;
+  width: 802px;
+  height: 180px;
+  text-align: center;
+}
+
+.comentarios {
+  padding-bottom: 4%;
+  font-size: 23px;
+}
+
+.comentarios h2 {
+  /* font-size: 35px; */
+  padding-bottom: 5%;
+}
+
+.buttons-comentarios {
+  /* background-color: red; */
+  text-decoration: none;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  width: 85px;
+  font-size: 25px;
+}
+
+.buttons-comentarios a {
+  background-color: #75C9C7;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 3px 11px;
+  border-radius: 7px;
   
-  .h05{
-    color: black;
-    border: solid 2px;
-    border-color: white;
-    border-radius: 2px;
-    position: absolute;
-    top: 270%;
-    margin-left: 15%;
-  }  
-  
-  .h06{
-    color: black;
-    border: solid 2px;
-    border-color: white;
-    border-radius: 2px;
-    position: absolute;
-    top: 270%;
-    margin-left: 55%;
-  } */
+}
 
   /* MAIN ☝️☝️☝️ */
 
@@ -317,13 +303,13 @@ main {
   border-left: 130px dotted transparent;
   border-right: 130px solid transparent;
   border-bottom: 100px solid #14274A;
-  margin: 2545px 50% 0px 50%;
+  margin: 2930px 50% 0px 50%;
 }
 
 .footer_contenier {
   display: flex;
   position: absolute;
-  top: 2600px;
+  top: 3000px;
   width: 100%;
   height: 180px;
   background-color:#14274A;
