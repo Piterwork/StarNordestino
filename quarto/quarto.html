@@ -9,77 +9,107 @@
 </head>
 <body>
     
-    <header>
-        <img src="../icones_logos/logo_header_paginas.png" alt="logo_star_nordestino">
-        <img src="./assets/img/header_quarto.png" alt="header_quarto_fundo">
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="../inicio/inicio.html">Início</a></li>
-                    <li><a href="../instalacoes/instalacoes.html">Instalações</a><li>
-                    <li><a href="../quarto/quarto.html">Quarto</a></li>
-                    <li><a href="../contato/contato.html">Contato</a></li>
-                    <li><a href="../login/login.html">Login</a></li>
+    <header>     
+        <section>   
+    
+            <div class="img_header">
+                <div class="filtro_img_header"></div>
+            </div>
+    
+            <div class="logo">
+                <img src="../icones_logos/logo_header_paginas.png" alt="Logo">
+            </div>
+    
+            <nav class="menu">
+                <ul class="links">
+                    <li><a class="efeitonav" href="../inicio/inicio.html">Início</a></li>
+                    <li><a class="efeitonav" href="../instalacoes/instalacoes.html">Instalações</a><li>
+                    <li><a class="efeitonav" href="../quarto/quarto.html">Quarto</a></li>
+                    <li><a class="efeitonav" href="../contato/contato.html">Contato</a></li>
+                    <li><a class="btn1" href="../login/login.html">Login</a></li>
                 </ul>
             </nav>
+    
+            <p class="p001">Bem Vindo ao</p> <h1 class="h002">STAR <br> NORDESTINO</h1> <p class="p002">Reserve a sua estadia e desfrute do luxo 
+            <br> redefinido com as taxas mais acessíveis.</p>
+            
+            <div class="agendar">
+                <a href="../Agendamento/agendamento.html">
+                    <img src="..//icones_logos/Icon_Button_Agendar.svg" alt="icon_button_agendar"> 
+                    <p>AGENDAR</p>                   
+                </a>
+            </div>
+    
+            <div class="scroll">
+                <a href="#alvo">
+                    <p>Deslize</p>
+                    <img src="../icones_logos/Icon_ButtonScroll.svg" alt="icon_button_scrrll">
+                </a>
+            </div>
         </section>
-
-        <section>
-            <p>Bem Vindo ao <br> <h1>STAR <br> NORDESTINO</h1> Reserve a sua estadia e desfrute do luxo redefinido com as taxas mais acessíveis.</p>
-
-            <a href="#">AGENDAR</a>
-
-            <p>Deslize</p>
-            <button>"Seta para deslizar"</button>
-        </section>
-
     </header>
 
     <main>
+        <div class="main-contenier">
 
-        <h2>QUARTOS E PREÇOS</h2>
-        <P>Cada um dos nossos quartos iluminidos e repletos de luz vem com tudo o que você poderia precisar para uma estadia confortável. E sim, o conforto não é o nosso único objetivo, também valorizamos o bom design, o mobiliário elegante e contemporâneo complementado pelos tons ricos da paleta da natureza, visíveis nas janelas e terraços com vista para o mar de nossos quartos.</P>
-
-        <div>
-            <img src="./assets/img/quarto1.png" alt="foto_quartounico">
-            <div>
-                <h3>QUARTO ÚNICO</h3>
+            <div id="alvo" class="header-main">
+                <h2>QUARTOS E PREÇOS</h2>
+                <P>Cada um dos nossos quartos iluminidos e repletos de luz vem com tudo o que você poderia precisar para uma estadia confortável. E sim, o conforto não é o nosso único objetivo, também valorizamos o bom design, o mobiliário elegante e contemporâneo complementado pelos tons ricos da paleta da natureza, visíveis nas janelas e terraços com vista para o mar de nossos quartos.</P>
             </div>
-            <div>
-                <a href="#">R$ 150 p/noite</a>
-            </div>            
-        </div>
 
-        <div>
-            <img src="./assets/img/quarto2.png" alt="foto_quartoduplo_casal">
-            <div>
-                <h3>QUARTO DUPLO</h3>
+            <div class="contenier-quartos">
+
+                <div class="contenier-divs-quartos">
+                    <img class="img-config" src="./assets/img/quarto1.png" alt="foto_quartounico">
+                    <div class="faixa-label">
+                        <h3>QUARTO ÚNICO</h3>
+                    </div>
+                    <div class="button-price">
+                        <a href="#">R$ 150 p/noite</a>
+                    </div>            
+                </div>
+
+                <div class="contenier-divs-quartos">
+                    <img class="img-config" src="./assets/img/quarto2.png" alt="foto_quartoduplo_casal">
+                    <div class="faixa-label">
+                        <h3>QUARTO DUPLO</h3>
+                    </div>
+                    <div class="button-price">
+                        <a href="#">R$ 150 p/noite</a>
+                    </div>            
+                </div>
+
+                <div class="contenier-divs-quartos">
+                    <img class="img-config" src="./assets/img/quarto3.png" alt="foto_quartoduplo_solteiro">
+                    <div class="faixa-label">
+                        <h3>QUARTO ÚNICO</h3>
+                    </div>
+                    <div class="button-price">
+                        <a href="#">R$ 150 p/noite</a>
+                    </div>            
+                </div>
+            
+
+                <div class="main-footer">
+                    <div class="comentarios">
+                        <h2>Comentários</h2>
+                        <p>"Calmo, sereno, retrô - Que maneira de relaxar e aproveitar"</p>
+                        <legend>Sr e Sra Rubens, CE</legend>
+                    </div>
+
+                    <div class="buttons-comentarios">
+                        <a href="#"><</a>
+                        <br>
+                        <a href="#">></a>
+                    </div>
+                </div>
+
             </div>
-            <div>
-                <a href="#">R$ 150 p/noite</a>
-            </div>            
+
         </div>
-
-        <div>
-            <img src="./assets/img/quarto3.png" alt="foto_quartoduplo_solteiro">
-            <div>
-                <h3>QUARTO ÚNICO</h3>
-            </div>
-            <div>
-                <a href="#">R$ 150 p/noite</a>
-            </div>            
-        </div>
-
-        <h2>Comentários</h2>
-        <p>"Calmo, sereno, retrô - Que maneira de relaxar e aproveitar"</p>
-        <legend>Sr e Sra Rubens, CE</legend>
-
-        <a href="#">"<"</a>
-        <a href="#">">"</a>
-
     </main>
 
-    <!-- <footer>
+    <footer>
         <div class="puxador"></div>
         <div class="footer_contenier">   
     
@@ -138,7 +168,7 @@
             </section>
     
         </div>
-    </footer> -->
+    </footer>
 
 </body>
 </html>
