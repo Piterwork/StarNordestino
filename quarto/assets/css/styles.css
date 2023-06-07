@@ -187,7 +187,7 @@ main {
 .main-contenier {
   display: flex;
   position: absolute;
-  margin-top: 51%;
+  margin-top: 52%;
   /* background-color: orange; */
   height: 2000px;
   width: 75%;
@@ -206,7 +206,7 @@ main {
 }
 
 .header-main h2 {
-  padding: 2% 0%;
+  padding: 4% 0%;
   font-size: xx-large;
 }
 
@@ -218,7 +218,7 @@ main {
   display: flex;
   flex-direction: column;
   /* background-color: purple; */
-  margin-top: 12%;
+  margin-top: 20%;
   width: 804px;
   height: 2000px;
   align-items: center;
