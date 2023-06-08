@@ -191,7 +191,7 @@ h3 {
 
 #mensagem_suporte {
   height: 200px;
-  
+  resize: none;  
 }
 
 #button-enviar {
@@ -203,6 +203,9 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
   translate: -100% 0%;
   margin-left: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 #button-enviar:hover {
