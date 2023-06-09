@@ -286,6 +286,7 @@ span{
     color: #fff;
     text-decoration: none;
     font-size: large;
+    cursor: pointer;
   }
   
   .secao_three {
@@ -363,4 +364,19 @@ span{
     height: 45px;
     width: 50px;
     border-radius: 0px 4px 4px 0px ;
+  }
+
+  dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  dialog {
+    position: -webkit-sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    width: 70%;
+    border-radius: .5rem;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.3);
   }
