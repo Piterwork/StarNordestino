@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -257,6 +258,10 @@ main {
   
 }
 
+.button-price:hover {
+  background-color: #83e2e1;
+}
+
 .button-price a {
   text-decoration: none;
   color: #ffffff;
@@ -297,6 +302,10 @@ main {
   justify-content: space-between;
   width: 85px;
   font-size: 25px;
+}
+
+.buttons-dos-comentarios:hover {
+  background-color: #83e2e1;
 }
 
 .buttons-comentarios a {
@@ -442,10 +451,15 @@ main {
   border-radius: 4px 0px 0px 4px;  
 }
 
-#button {
+#button-footer {
   border-style: none;
   background-color: #75C9C7;
   height: 45px;
   width: 50px;
   border-radius: 0px 4px 4px 0px ;
+}
+
+#button-footer:hover {
+  background-color: #83e2e1;
+  cursor: pointer;
 }
