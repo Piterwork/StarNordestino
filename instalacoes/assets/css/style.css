@@ -288,8 +288,11 @@ main {
   text-decoration: none;
   color: #ffffff;
   padding: 3px 11px;
-  border-radius: 7px;
-  
+  border-radius: 7px; 
+}
+
+.buttons-dos-comentarios:hover {
+  background-color: #83e2e1;
 }
 
   /* MAIN ☝️☝️☝️ */
@@ -426,10 +429,15 @@ main {
   border-radius: 4px 0px 0px 4px;  
 }
 
-#button {
+#button-footer {
   border-style: none;
   background-color: #75C9C7;
   height: 45px;
   width: 50px;
   border-radius: 0px 4px 4px 0px ;
+}
+
+#button-footer:hover {
+  background-color: #83e2e1;
+  cursor: pointer;
 }
