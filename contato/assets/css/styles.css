@@ -369,14 +369,44 @@ span{
   dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.5);
   }
-  
-  dialog {
+
+  .contenier_model {
+    display: flex;   
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+  }
+
+  #menu {
+    display: flex;
     position: -webkit-sticky;
+    width: 50%;
+    height: 100px;
+    background-color: rgb(0, 255, 21);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #menu a {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .body_model {
+    padding: 3% 2% 0% 2%;
+    /* background-color: red; */
+  }
+
+  dialog {    
+    overflow: auto;
+    /* position: -webkit-sticky; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: none;
-    width: 70%;
+    width: 50%;
+    height: 80%;
     border-radius: .5rem;
     box-shadow: 0 0 2em rgba(0, 0, 0, 0.3);
   }
