@@ -187,7 +187,7 @@ main {
 .main-contenier {
   display: flex;
   position: absolute;
-  margin-top: 51%;
+  margin-top: 52%;
   /* background-color: orange; */
   height: 2000px;
   width: 75%;
@@ -206,7 +206,7 @@ main {
 }
 
 .header-main h2 {
-  padding: 2% 0%;
+  padding: 3% 0%;
   font-size: xx-large;
 }
 
@@ -218,7 +218,7 @@ main {
   display: flex;
   flex-direction: column;
   /* background-color: purple; */
-  margin-top: 12%;
+  margin-top: 15%;
   width: 804px;
   height: 2000px;
   align-items: center;
@@ -273,8 +273,8 @@ main {
   border-radius: 4px;
 }
 
-.main-footer {
-  margin-top: 167%;
+.footer-body {
+  margin-top: 165%;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -328,13 +328,13 @@ main {
   border-left: 130px dotted transparent;
   border-right: 130px solid transparent;
   border-bottom: 100px solid #14274A;
-  margin: 185% 50% 0px 50%;
+  margin: 186% 50% 0px 50%;
 }
 
 .footer_contenier {
   display: flex;
   position: absolute;
-  top: 375%;
+  top: 379%;
   width: 100%;
   height: 180px;
   background-color:#14274A;
