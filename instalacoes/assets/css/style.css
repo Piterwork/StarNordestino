@@ -15,7 +15,7 @@ html, body {
 }
 
 .img_header {
-  background: url(../img/fundo_header_instalacoes.png);
+  background: url(../img/fundo_header_instalacoes.webp);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
