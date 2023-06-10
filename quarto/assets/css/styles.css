@@ -15,7 +15,7 @@ html, body {
 }
 
 .img_header {
-  background: url(../img/header_quarto.png);
+  background: url(../img/header_quarto.webp);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
