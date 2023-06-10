@@ -70,15 +70,17 @@ body {
 }
 
 #logo-star-nordestino {
-    height: 200px;
+    height: 120px;
+    margin-top: 20%;
 }
 
 .logo-star-nordestino {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     /* background-color: brown; */
     height: 190px;
-    position: relative;
-    translate: 25px;
-
 }
 
 .div-formulario {
@@ -183,3 +185,7 @@ body {
     text-decoration: none;
 }
 
+/* #logo-star-nordestino {
+    width: 10%;
+    height: auto;
+} */
