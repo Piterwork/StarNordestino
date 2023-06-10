@@ -15,7 +15,7 @@ html, body {
 }
 
 .img_header {
-  background: url(../img/fundo_header_inicio.png);
+  background: url(../img/fundo_header_inicio.webp);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -260,7 +260,7 @@ html, body {
 }
 
 .img_cama {
-  background-image: url(../img/div1.png);
+  background-image: url(../img/div1.webp);
   height: 400px;
   width: 600px;
   background-repeat: no-repeat;
@@ -335,7 +335,7 @@ html, body {
 }
 
 .img_praia {
-  background-image: url(../img/div2.png);
+  background-image: url(../img/div2.webp);
   height: 400px;
   width: 600px;
   background-repeat: no-repeat;
