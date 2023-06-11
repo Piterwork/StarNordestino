@@ -358,6 +358,7 @@ main {
   color: #fff;
   text-decoration: none;
   font-size: large;
+  cursor: pointer;
 }
 
 .secao_three {
@@ -427,6 +428,7 @@ main {
   color: white;
   padding: 7px;
   border-radius: 4px 0px 0px 4px;  
+  outline: none;
 }
 
 #button-footer {
@@ -440,4 +442,95 @@ main {
 #button-footer:hover {
   background-color: #83e2e1;
   cursor: pointer;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog {    
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  width: 50%;
+  height: 80%;
+  border-radius: .5rem;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.3);
+}
+
+dialog button {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  padding: 17px 25px;
+  background-color: #75C9C7;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  outline: none;
+}
+
+dialog button:hover {
+background-color: #83e2e1;
+cursor:pointer;
+}
+
+.contenier-dialog {
+  /* background-color: red; */
+  height: 100%;
+  width: 100%;
+}
+
+.body-dialog {
+  /* background-color: orange; */
+  height: 85%;
+  overflow: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0px;
+  word-spacing: 2px;
+  line-height: 160%;
+  padding: 4% 6%;
+}
+
+.body-dialog h4 {
+  font-size: 19px;
+  text-align: center;
+}
+
+.body-dialog h5 {
+  padding-bottom: 1%;
+  font-size: 15px;
+}
+
+.button-dialog {
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+}
+
+.contenier-table {
+  display: flex;
+  /* background-color: red; */
+  width: 100%;
+  justify-content: center;
+}
+
+.table-model {
+  /* background-color: orange; */
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+
+.table-model td{
+  /* border: 2px solid rgb(0, 60, 255); */
+  width: 60%;
+  padding: 1%;
 }
