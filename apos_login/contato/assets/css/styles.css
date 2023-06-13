@@ -84,7 +84,7 @@ header h1 {
 }
 
 .img-perfil-nav {
-  background-image: url(../img/icon_perfil_white.webp);
+  background-image: url(./icon_perfil_white.webp);
   height: 50px;
   width: 50px;
   background-size: cover;
