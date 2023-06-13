@@ -1,3 +1,21 @@
+<?php
+
+    include ('../data_base_apos_login/conexao.php');
+
+    $sql = "SELECT * FROM starnordestino.agendamento ";
+    $query = mysqli_query($conexao,$sql);
+
+    while($sql = mysqli_fetch_array($query)){
+        $id = $sql["id_agendamento"];
+        $acomodacao = $sql["acomodacao"];
+        $number_adultos = $sql["number_adultos"];
+        $date_entrada = $sql["date_entrada"];
+        $date_saida = $sql["date_saida"];
+        $number_criancas = $sql["number_criancas"];
+        $number_quartos = $sql["number_quartos"];
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -36,19 +54,19 @@
                             <div class="div-form-one">
                                 <label class="label" for="acomodacao">Acomodacao:</label>
                                 <br>
-                                <input type="text" name="acomodacao" id="acomodacao" placeholder="Rubens Varsconcellos">
+                                <input type="text" name="acomodacao" id="acomodacao" value="<?php echo $acomodacao; ?>">
                             </div>
 
                             <div class="div-form-two">
                                 <label class="label" for="number_adultos">Nº. Adultos:</label>
                                 <br>
-                                <input type="number" name="number_adultos" id="number_adultos">
+                                <input type="number" name="number_adultos" id="number_adultos" value="<?php echo $number_adultos; ?>">
                             </div>
 
                             <div class="div-form-three">
                                 <label class="label" for="number_criancas">Nº. Crianças:</label>
                                 <br>
-                                <input type="number" name="number_criancas" id="number_criancas">
+                                <input type="number" name="number_criancas" id="number_criancas" value="<?php echo $number_criancas; ?>">
                             </div>
                         </div>
 
@@ -56,19 +74,19 @@
                             <div class="div-form-for">
                                 <Label class="label" for="date_entrada">Data de Entrada:</Label>
                                 <br>
-                                <input type="date" name="date_entrada" id="date_entrada">   
+                                <input type="date" name="date_entrada" id="date_entrada" value="<?php echo $date_entrada; ?>">   
                             </div>
                             
                             <div class="div-form-five">
                                 <Label class="label" for="date_saida">Data de Saida:</Label>
                                 <br>
-                                <input type="date" name="date_saida" id="date_saida">  
+                                <input type="date" name="date_saida" id="date_saida" value="<?php echo $date_saida; ?>">  
                             </div>
 
                             <div class="div-form-six">
                                 <Label class="label" for="number_quartos">Nº. Quartos:</Label>
                                 <br>
-                                <input type="number" name="number_quartos" id="number_quartos">  
+                                <input type="number" name="number_quartos" id="number_quartos" value="<?php echo $number_quartos; ?>">  
                             </div>
                         </div>
 

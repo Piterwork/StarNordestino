@@ -79,7 +79,7 @@
   }
 
   .img-perfil-nav {
-    background-image: url(/icones_logos/icon_perfil_white.webp);
+    background-image: url(../img/icon_perfil_white.webp);
     height: 50px;
     width: 50px;
     background-size: cover;
@@ -143,7 +143,7 @@
 }
 
 .img-perfil {
-  background-image: url(/icones_logos/icon_perfil_black.webp);
+  background-image: url(../img/icon_perfil_black.webp);
   background-size: cover;
   background-repeat: no-repeat;
   height: 70px;
@@ -245,7 +245,7 @@
   height: 40px;
   border: 1px solid;
   border-radius: 5px;
-  padding: 4% 2%;
+  padding: 4% 3%;
 }
 
 .main-agendamento label {

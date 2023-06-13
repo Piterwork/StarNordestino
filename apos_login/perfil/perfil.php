@@ -1,6 +1,6 @@
 <?php
 
-    include ('../data_base/conexao.php');
+    include ('../data_base_apos_login/conexao.php');
 
     $sql = "SELECT * FROM starnordestino.agendamento ";
     $query = mysqli_query($conexao,$sql);
@@ -27,7 +27,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="../icones_logos/logo_header_paginas.webp" alt="Logo">
+            <img src="../../icones_logos/logo_header_paginas.webp" alt="Logo">
         </div>
         
         <section>
@@ -112,12 +112,12 @@
 
                                 <div class="coluna-one coluna">
                                     <label for="">Data de Entrada:</label>  
-                                    <input type="date" disabled placeholder="<?php echo $date_entrada ;?>">
+                                    <input type="text" disabled placeholder="<?php echo $date_entrada ;?>">
                                 </div>
 
                                 <div class="coluna-two coluna">
                                     <label for="">Data de Saída:</label>
-                                    <input type="date" disabled placeholder="<?php echo $date_saida ;?>">
+                                    <input type="text" disabled placeholder="<?php echo $date_saida ;?>">
                                 </div>
 
                                 <div class="coluna-three coluna">
@@ -128,7 +128,7 @@
                             </div>
 
                             <div class="button-agendamento">
-                                <a href="../logado/l_agendamento.php" class="button-editar-informações">
+                                <a href="../agendamento_perfil/agendamento.php" class="button-editar-informações">
                                     <p>Editar Informções</p>
                                 </a>
                             </div>
@@ -167,17 +167,17 @@
             <section class="secao_three">
                 <div>
                     <a href="https://www.facebook.com/pages/Professor-Moreira-de-Sousa-EEEP/835618283160466">
-                        <img src="../icones_logos/facebook_footer.webp" alt="icon_facebook">
+                        <img src="../../icones_logos/facebook_footer.webp" alt="icon_facebook">
                         Facebook
                     </a>
     
                     <a href="#">
-                        <img src="../icones_logos/twitter_footer.webp" alt="icon_twitter">
+                        <img src="../../icones_logos/twitter_footer.webp" alt="icon_twitter">
                         Twitter
                     </a>
     
                     <a href="https://www.instagram.com/eeepmoreiradesousa/">
-                        <img src="../icones_logos/instagram_footer.webp" alt="icon_instagram">
+                        <img src="../../icones_logos/instagram_footer.webp" alt="icon_instagram">
                         Instagram
                     </a>
                 </div>
