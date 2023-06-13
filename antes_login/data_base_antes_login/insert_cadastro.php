@@ -10,4 +10,6 @@
 
     $result = mysqli_query($conexao, $sql);
     
+    header('Location: ../../apos_login/perfil/perfil.php');
+
 ?>
