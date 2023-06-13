@@ -1,0 +1,478 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+header {
+  display: flex;
+  background-color: #14274A;
+  height: 20%;
+  align-items: center;
+}
+
+header h1 {
+  text-align: center;
+  width: 100%;
+  margin-top: 3%;
+  color: #ffffff;
+}
+
+.menu {
+  position: absolute;
+  height: 20%;
+  padding-top: 2%;
+  font-size: 25px;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* bottom: 0; */
+  margin: auto;
+}  
+
+.logo img {
+  position: absolute;
+  top: 0px;
+  margin-left: 100px;
+  height: 125px; /* Defina a altura desejada para a logo */
+}
+
+.btn1{
+  color: #ffffff;
+  border: none;
+  padding: 5px 20px; 
+  border-radius: 6px;
+  background-color: #75C9C7; 
+  font-family: Arial, Helvetica, sans-serif; 
+  text-align: center; 
+}
+
+.btn1:hover {
+  background-color: #83e2e1;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px; /* Espaçamento horizontal entre os links */
+}
+
+.links li a{
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 40px;
+  transition: border-bottom 0.3s ease; /* Adicionando uma transição suave para a borda inferior */
+}
+
+.efeitonav:hover {
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform .5s;
+
+  border-bottom: 2px solid #ffffff; /* Alterando a cor da borda inferior quando o cursor passar por cima */
+}
+
+.img-perfil-nav {
+  background-image: url(../img/icon_perfil_white.webp);
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  margin-right: 1.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-perfil-nav a {
+  padding: 50%;
+}
+
+/* HEAD ☝️☝️☝️ */
+
+/* MAIN 👇👇👇 */
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.contenier-main {
+  /* background-color: orange; */
+  position: absolute;
+  width: 75%;
+  height: 1400px;
+}
+
+.header-main {
+  /* background-color: red; */
+  margin-top: 9%;
+  width: 100%;
+  font-size: 22px;
+  color: #14274A;
+}
+
+.header-main p {
+  padding-top: 2%;
+}
+
+h3 {
+  position: absolute;
+  margin-top: 7%;
+  /* background-color: #7fc975; */
+  margin-left: 50%;
+  translate: -50% 0%;
+  font-size: 32px;
+  padding: 6px 0px;
+  color: #14274A;
+
+}
+
+.contenier-map-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14%;
+  /* background-color: green; */
+  height: 60%;
+}
+
+.lado-mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 47%;
+  /* background-color: #75C9C7; */
+}
+
+.lado-mapa iframe {
+  width: 100%;
+  height: 86%;
+  border: 2px #14274A solid;
+  border-radius: 4px;
+}
+
+.lado-mapa p{
+  padding-top: 2%;
+  font-size: 25px;
+}
+
+.lado-form {
+  display: flex;
+  flex-direction: column;
+  /* background-color: pink; */
+  width: 47%;  
+}
+
+.inframe-form  {
+  /* background-color: rgb(255, 231, 97); */
+  height: 86%;
+  border: 2px #14274A solid;
+  border-radius: 4px;
+}
+
+.form {
+  /* background-color: red; */
+  width: 80%;
+  margin-top: 8%;
+  margin-left: 50%;
+  translate: -50% 0%;
+}
+
+.label {
+  display: inline-block;
+  font-size: 23px;
+  padding-bottom: 2%;
+}
+
+.inputs {
+  border: 1px #14274A solid;
+  display: block;
+  height: 45px;
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 10%;
+  padding: 4% 2%;
+}
+
+#mensagem_suporte {
+  height: 200px;
+  resize: none;  
+}
+
+#button-enviar {
+  border: none;
+  color: #ffffff;
+  padding: 15px 35px; 
+  border-radius: 4px;
+  background-color: #75C9C7; 
+  font-family: Arial, Helvetica, sans-serif;
+  translate: -100% 0%;
+  margin-left: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+#button-enviar:hover {
+  background-color: #83e2e1;
+  cursor: pointer;
+}
+
+span{
+  position: absolute;
+  margin-top: 2%;
+  /* background-color: #7fc975; */
+  margin-left: 50%;
+  translate: -50% 0%;
+  font-size: 25px;
+  padding: 6px 0px;
+}
+
+/* MAIN ☝️☝️☝️ */
+
+/* FOOTER 👇👇👇 */
+
+.puxador {
+    width: 0px;
+    position: absolute;
+    translate: -50%;
+    border-left: 130px dotted transparent;
+    border-right: 130px solid transparent;
+    border-bottom: 100px solid #14274A;
+    margin: 1520px 50% 0px 50%;
+  }
+  
+  .footer_contenier {
+    display: flex;
+    position: absolute;
+    top: 1800px;
+    width: 100%;
+    height: 180px;
+    background-color:#14274A;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .secao_one {
+    display: flex;
+    /* background-color: red; */
+    height: 130px;
+    width: 270px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6%;
+  }
+  
+  .secao_one h2 {
+    font-size: 25px;
+    letter-spacing: 0.1rem;
+    padding-bottom: 8px;
+  }
+  
+  .secao_one p {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.1rem;
+  }
+  
+  .secao_two {
+    display: flex;
+    /* background-color: pink; */
+    height: 130px;
+    width: 270px;
+    letter-spacing: 0.1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .secao_two a {
+    line-height: 35px;
+    color: #fff;
+    text-decoration: none;
+    font-size: large;
+    cursor: pointer;
+  }
+  
+  .secao_three {
+    display: flex;
+    /* background-color: green; */
+    height: 130px;
+    width: 270px;
+    letter-spacing: 0.1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .secao_three a {
+    line-height: 35px;
+    color: #fff;
+    text-decoration: none;
+    font-size: large;
+    justify-content: center;
+    display: block;
+  }
+  
+  .secao_three div img {
+    align-items: center;
+    width: auto;
+    height: 17px;
+    margin-right: 4px;
+    translate: 0px 2px;
+  }
+  
+  .secao_for {
+    display: flex;
+    /* background-color: rgb(9, 114, 26); */
+    height: 130px;
+    width: 270px;
+    letter-spacing: 0.1rem;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6%;
+  }
+  
+  .div_label {
+    display: flex;
+    /* background-color: red; */
+    width: 100%;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 7%;
+  }
+  
+  .div_email{
+    display: flex;
+    /* background-color: orange; */
+    border-style: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+  }
+  
+  #email {
+    display: inline;
+    border: 2px solid #75C9C7;
+    height: 45px;
+    width: 220px;
+    background-color: #14274A;
+    color: white;
+    padding: 7px;
+    border-radius: 4px 0px 0px 4px;
+    outline: none;
+  }
+
+  #button-footer {
+    border-style: none;
+    background-color: #75C9C7;
+    height: 45px;
+    width: 50px;
+    border-radius: 0px 4px 4px 0px ;
+  }
+  
+  #button-footer:hover {
+    background-color: #83e2e1;
+    cursor: pointer;
+  }
+
+  dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  dialog {    
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    width: 50%;
+    height: 80%;
+    border-radius: .5rem;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.3);
+  }
+
+  dialog button {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    padding: 17px 25px;
+    background-color: #75C9C7;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    outline: none;
+  }
+
+  dialog button:hover {
+  background-color: #83e2e1;
+  cursor:pointer;
+  }
+
+  .contenier-dialog {
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+  }
+
+  .body-dialog {
+    /* background-color: orange; */
+    height: 85%;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    line-height: 160%;
+    padding: 4% 6%;
+  }
+  
+  .body-dialog h4 {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .body-dialog h5 {
+    padding-bottom: 1%;
+    font-size: 15px;
+  }
+
+  .button-dialog {
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+  }
+
+  .contenier-table {
+    display: flex;
+    /* background-color: red; */
+    width: 100%;
+    justify-content: center;
+  }
+
+  .table-model {
+    /* background-color: orange; */
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+  }
+
+  .table-model td{
+    /* border: 2px solid rgb(0, 60, 255); */
+    width: 60%;
+    padding: 1%;
+  }
