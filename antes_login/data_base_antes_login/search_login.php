@@ -20,7 +20,7 @@
        		header('location: ../respostas/login_resposta.html');
 
       	}else{
-	      	header('Location: https://www.google.com/');
+	      	header('Location: ../../apos_login/perfil/perfil.php');
 	    }
     }
 ?>
