@@ -1,0 +1,70 @@
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  dialog {    
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    width: 40%;
+    height: 50%;
+    border-radius: .5rem;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.3);
+  }
+  
+  dialog a {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    padding: 17px 25px;
+    background-color: #75C9C7;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    outline: none;
+  }
+  
+  dialog a:hover {
+  background-color: #83e2e1;
+  cursor:pointer;
+  }
+  
+  .contenier-dialog {
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+  }
+  
+  .body-dialog {
+    /* background-color: orange; */
+    height: 60%;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    line-height: 160%;
+    padding: 4% 6%;
+  }
+  
+  .body-dialog h4 {
+    font-size: 19px;
+    text-align: center;
+  }
+  
+  .body-dialog h5 {
+    padding-bottom: 1%;
+    font-size: 15px;
+  }
+  
+  .button-dialog {
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+  }

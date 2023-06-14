@@ -1,8 +1,28 @@
 <?php
-
+    session_start();
     include ('../data_base_apos_login/conexao.php');
 
-    $sql = "SELECT * FROM starnordestino.agendamento ";
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
+    {
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header('Location: ../../antes_login/login/login.html');
+    }
+
+    $logado = $_SESSION['email'];
+
+
+    $sql = "SELECT * FROM starnordestino.cadastro WHERE email = '$logado' ";
+    $query = mysqli_query($conexao,$sql);
+
+    while($sql = mysqli_fetch_array($query)){
+        $id_cadastro = $sql["id_cadastro"];
+        $email = $sql["email"];
+        $senha = $sql["senha"];
+        $nome_usuario = $sql["nome_usuario"];
+    }
+
+    $sql = "SELECT * FROM starnordestino.agendamento WHERE id_agendamento = '$id_cadastro' ";
     $query = mysqli_query($conexao,$sql);
 
     while($sql = mysqli_fetch_array($query)){
@@ -14,6 +34,8 @@
         $number_criancas = $sql["number_criancas"];
         $number_quartos = $sql["number_quartos"];
     }
+
+    $_SESSION['id_verificacao'] = $id_cadastro;
 ?>
 
 <!DOCTYPE html>
@@ -57,15 +79,15 @@
 
                     <div class="header-perfil">
                         <div class="img-perfil"></div>
-                        <h2>Dilvans Rircarço</h2>
+                        <h2><?php echo $nome_usuario;?></h2>
                     </div>
 
                     <div class="continier-main-perfil">
                         <div class="main-perfil">
                             <p>
-                                <b>Email:</b>  teste@gmail.com
+                                <b>Email:</b>  <?php echo $email;?>
                                 <br>
-                                <b>Senha:</b>  ******
+                                <b>Senha:</b>  <?php echo $senha;?>
                             </p>
                         </div>
 

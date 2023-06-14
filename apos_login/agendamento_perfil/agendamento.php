@@ -1,8 +1,24 @@
 <?php
-
+    session_start();
     include ('../data_base_apos_login/conexao.php');
 
-    $sql = "SELECT * FROM starnordestino.agendamento ";
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
+    {
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header('Location: ../../antes_login/login/login.html');
+    }
+
+    $logado = $_SESSION['email'];
+
+    $sql = "SELECT * FROM starnordestino.cadastro WHERE email = '$logado' ";
+    $query = mysqli_query($conexao,$sql);
+
+    while($sql = mysqli_fetch_array($query)){
+        $id_cadastro = $sql["id_cadastro"];
+    }
+
+    $sql = "SELECT * FROM starnordestino.agendamento WHERE id_agendamento = '$id_cadastro' ";
     $query = mysqli_query($conexao,$sql);
 
     while($sql = mysqli_fetch_array($query)){
@@ -47,7 +63,7 @@
             </header>
 
             <div class="div-formulario">
-                <form action="../data_base_apos_login/insert_agendamento.php" method="post">
+                <form action="../data_base_apos_login/update_agendamento.php" method="post">
                     <div class="conenier">
                     
                         <div class="line_one">
@@ -89,6 +105,8 @@
                                 <input type="number" name="number_quartos" id="number_quartos" value="<?php echo $number_quartos; ?>">  
                             </div>
                         </div>
+
+                            <input type="hidden" name="id_cadastro" value="<?php echo $id_cadastro;?>">
 
                             <input id="button-confirmar" type="submit" value="Confirmar Estadia">
                     </div>
