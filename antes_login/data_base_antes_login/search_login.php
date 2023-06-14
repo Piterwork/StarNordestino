@@ -1,26 +1,31 @@
 <?php
 
-    include('conexao.php');
+	session_start();
 
-    $email = ($_POST['email']);
-    $senha = ($_POST['senha']);
-    $clicou = ($_POST['clicou']);
+	if (!empty ($_POST['clicou']) || !empty ($_POST['email']) || !empty ($_POST['senha'])) {
+		
+		include('conexao.php');
 
-    echo $clicou;
-
-    if (isset($clicou)) {
+		$email = ($_POST['email']);
+		$senha = ($_POST['senha']);
+		$clicou = ($_POST['clicou']);
 
 		$sql = "SELECT * FROM starnordestino.cadastro WHERE email = '$email' and senha = '$senha'";
 
 		$result = $conexao -> query($sql);
 
-		echo "$sql";
-		
-		if (mysqli_num_rows($result)<=0){
-       		header('location: ../respostas/login_resposta.html');
-
-      	}else{
-	      	header('Location: ../../apos_login/perfil/perfil.php');
-	    }
-    }
+		if(mysqli_num_rows($result) < 1)
+        {
+            unset($_SESSION['email']);
+            unset($_SESSION['senha']);
+			header('location: ../respostas/login_resposta.html');
+        }
+        else
+        {
+            $_SESSION['email'] = $email;
+            $_SESSION['senha'] = $senha;
+			header('Location: ../../apos_login/perfil/perfil.php');
+        }
+	}
+	
 ?>
