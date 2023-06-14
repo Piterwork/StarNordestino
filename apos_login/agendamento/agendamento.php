@@ -58,19 +58,19 @@
                             <div class="div-form-one">
                                 <label class="label" for="acomodacao">Acomodacao:</label>
                                 <br>
-                                <input type="text" name="acomodacao" id="acomodacao" placeholder="Rubens Varsconcellos">
+                                <input type="text" name="acomodacao" id="acomodacao" placeholder="Rubens Varsconcellos" required>
                             </div>
 
                             <div class="div-form-two">
                                 <label class="label" for="number_adultos">Nº. Adultos:</label>
                                 <br>
-                                <input type="number" name="number_adultos" id="number_adultos">
+                                <input type="number" name="number_adultos" id="number_adultos" required>
                             </div>
 
                             <div class="div-form-three">
                                 <label class="label" for="number_criancas">Nº. Crianças:</label>
                                 <br>
-                                <input type="number" name="number_criancas" id="number_criancas">
+                                <input type="number" name="number_criancas" id="number_criancas" required>
                             </div>
                         </div>
 
@@ -78,19 +78,19 @@
                             <div class="div-form-for">
                                 <Label class="label" for="date_entrada">Data de Entrada:</Label>
                                 <br>
-                                <input type="date" name="date_entrada" id="date_entrada">   
+                                <input type="date" name="date_entrada" id="date_entrada" required>   
                             </div>
                             
                             <div class="div-form-five">
                                 <Label class="label" for="date_saida">Data de Saida:</Label>
                                 <br>
-                                <input type="date" name="date_saida" id="date_saida">  
+                                <input type="date" name="date_saida" id="date_saida" required>  
                             </div>
 
                             <div class="div-form-six">
                                 <Label class="label" for="number_quartos">Nº. Quartos:</Label>
                                 <br>
-                                <input type="number" name="number_quartos" id="number_quartos">  
+                                <input type="number" name="number_quartos" id="number_quartos" required>  
                             </div>
                         </div>
 
