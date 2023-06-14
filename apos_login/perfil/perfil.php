@@ -178,6 +178,12 @@
                                 </div>
 
                                 <div class="button-agendamento">
+                                    <a href="../agendamento/agendamento.php" class="button-editar-informações">
+                                        <p>Criar Agendamento</p>
+                                    </a>
+                                </div>
+
+                                <div class="button-agendamento">
                                     <a href="../agendamento_perfil/agendamento.php" class="button-editar-informações">
                                         <p>Editar Informações</p>
                                     </a>

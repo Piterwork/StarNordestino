@@ -58,7 +58,7 @@
                             <div class="div-form-one">
                                 <label class="label" for="acomodacao">Acomodacao:</label>
                                 <br>
-                                <input type="text" name="acomodacao" id="acomodacao" placeholder="Rubens Varsconcellos" required>
+                                <input type="text" name="acomodacao" id="acomodacao" required>
                             </div>
 
                             <div class="div-form-two">
