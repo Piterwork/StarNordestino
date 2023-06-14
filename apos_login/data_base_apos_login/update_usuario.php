@@ -19,6 +19,6 @@
 
     $result = mysqli_query($conexao, $sql);
 
-    header('Location: ../../apos_login/perfil/perfil.php');
+    header('Location: ../../antes_login/login/login.html');
     
 ?>

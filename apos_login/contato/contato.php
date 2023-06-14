@@ -140,9 +140,9 @@
                     </div>
     
                     
-                    <form action="#">
+                    <form action="../data_base_apos_login/assinatura_newsletter.php" method="post">
                         <div class="div_email">
-                            <input type="email" id="email" placeholder="Endereço de Email" required>
+                            <input type="email" id="email" name="email_newsletter" placeholder="Endereço de Email" required>
                             <input id="button-footer" type="submit" value="OK">
                         </div>
                     </form>
