@@ -77,25 +77,46 @@
             <section class="section-perfil">
                 <div class="box-perfil">
 
-                    <div class="header-perfil">
-                        <div class="img-perfil"></div>
-                        <h2><?php echo $nome_usuario;?></h2>
-                    </div>
+                    <div class="contenier-box">
 
-                    <div class="continier-main-perfil">
-                        <div class="main-perfil">
-                            <p>
-                                <b>Email:</b>  <?php echo $email;?>
-                                <br>
-                                <b>Senha:</b>  <?php echo $senha;?>
-                            </p>
+                        <div class="gambiarra">
+                            
+                            <div class="header-perfil">
+                                <div class="img-perfil"></div>
+                                <h2><?php echo $nome_usuario;?></h2>
+                            </div>
+
+                            <div class="continier-main-perfil">
+                                <div class="main-perfil">
+                                    <p>
+                                        <b>Email:</b>  <?php echo $email;?>
+                                        <br>
+                                        <b>Senha:</b>  <?php echo $senha;?>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="button-perfil">
-                            <a href="#" class="button-editar-informações">
-                                <p>Editar Informções</p>
-                            </a>
+                        <div class="section-buttons">
+                            <div class="button-perfil">
+                                <a href="../data_base_apos_login/deletar_conta.php" class="button-editar-informações">
+                                    <p>Apagar Conta</p>
+                                </a>
+                            </div>
+
+                            <div class="button-perfil">
+                                <a href="../edit_usuario_perfil/editar_usuario.php" class="button-editar-informações">
+                                    <p>Editar Informações</p>
+                                </a>
+                            </div>
+
+                            <div class="button-perfil">
+                                <a href="../data_base_apos_login/desconectar.php" class="button-editar-informações">
+                                    <p>Desconectar</p>
+                                </a>
+                            </div>
                         </div>
+
                     </div>
 
                 </div>
@@ -144,15 +165,23 @@
 
                                 <div class="coluna-three coluna">
                                     <label for="">Nº do Quarto:</label>
-                                    <input type="number" disabled placeholder="<?php echo $number_adultos ;?>">
+                                    <input type="number" disabled placeholder="<?php echo $number_quartos ;?>">
                                 </div>                                
 
                             </div>
 
-                            <div class="button-agendamento">
-                                <a href="../agendamento_perfil/agendamento.php" class="button-editar-informações">
-                                    <p>Editar Informções</p>
-                                </a>
+                            <div class="section-buttons-agendamento">
+                                <div class="button-agendamento">
+                                    <a href="../data_base_apos_login/apagar_agendamento.php" class="button-editar-informações">
+                                        <p>Apagar Agendamento</p>
+                                    </a>
+                                </div>
+
+                                <div class="button-agendamento">
+                                    <a href="../agendamento_perfil/agendamento.php" class="button-editar-informações">
+                                        <p>Editar Informações</p>
+                                    </a>
+                                </div>
                             </div>
 
                         </div>                        

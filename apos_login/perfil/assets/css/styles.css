@@ -135,11 +135,24 @@
   padding: 2%;
 }
 
+.contenier-box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.gambiarra {
+  width: 100%;
+  height: 100%;
+  /* background-color: violet; */
+}
+
 .header-perfil {
   /* background-color: red; */
   display: flex;
   align-items: center;
   height: 25%;
+  width: 100%;
 }
 
 .img-perfil {
@@ -157,13 +170,14 @@
 .continier-main-perfil {
   display: flex;
   /* background-color: #83e2e1; */
+  width: 100%;
   height: 75%;
   justify-content: space-between;
 }
 
 .main-perfil {
   /* background-color: #3ab189; */
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -175,10 +189,13 @@
   line-height: 70px;
 }
 
-.button-perfil {
-  /* background-color: #852e91; */
+.section-buttons {
+  /* background-color: orange; */
+  height: 100%;
+  width: 25%;
   display: flex;
-  align-items: end;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .button-perfil a {
@@ -312,17 +329,24 @@
   line-height: 50px;
 }
 
+.section-buttons-agendamento {
+  /* background-color: orange; */
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 10%;
+}
+
 .button-agendamento {
   /* background-color: #852e91; */
-  width: 80%;
-  align-items: center;
+  width: 25%;
 }
 
 .button-agendamento a {
   display: flex;
   color: #000000;
   text-decoration: none;
-  padding: 10px 33px;
 }
 
 .button-agendamento a:hover {

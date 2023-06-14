@@ -29,7 +29,7 @@
             $date_entrada  = $_POST['date_entrada'];
             $number_quartos  = $_POST['number_quartos'];
 
-            $sql = "UPDATE starnordestino.agendamento SET acomodacao = '$acomodacao', number_adultos = '$number_adultos', number_criancas = '$number_criancas', date_saida = '$date_saida', date_entrada = '$date_entrada', number_quartos = 'number_quartos' WHERE id_agendamento = '$id_cadastro'";
+            $sql = "UPDATE starnordestino.agendamento SET acomodacao = '$acomodacao', number_adultos = '$number_adultos', number_criancas = '$number_criancas', date_saida = '$date_saida', date_entrada = '$date_entrada', number_quartos = '$number_quartos' WHERE id_agendamento = '$id_cadastro'";
 
             $result = mysqli_query($conexao, $sql);
 
