@@ -1,3 +1,15 @@
+<?php
+    session_start();    
+    include ('../data_base_apos_login/conexao.php');
+
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
+    {
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header('Location: ../../antes_login/login/login.html');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,108 +17,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <title>PAGINA QUARTO</title>
+    <title>PAGINA CONTATO</title>
 </head>
 <body>
-    
-    <header>     
-        <section>   
-    
-            <div class="img_header">
-                <div class="filtro_img_header"></div>
-            </div>
-    
-            <div class="logo">
-                <img src="../../icones_logos/logo_header_paginas.webp" alt="Logo">
-            </div>
-    
+
+    <header>
+
+        <div class="logo">
+            <img src="../../icones_logos/logo_header_paginas.webp" alt="Logo">
+        </div>
+        
+        <section>
             <nav class="menu">
                 <ul class="links">
-                    <li><a class="efeitonav" href="../inicio/inicio.html">Início</a></li>
-                    <li><a class="efeitonav" href="../instalacoes/instalacoes.html">Instalações</a><li>
-                    <li><a class="efeitonav" href="../quarto/quarto.html">Quarto</a></li>
-                    <li><a class="efeitonav" href="../contato/contato.html">Contato</a></li>
+                    <li><a class="efeitonav" href="../inicio/inicio.php">Início</a></li>
+                    <li><a class="efeitonav" href="../instalacoes/instalacoes.php">Instalações</a></li>
+                    <li><a class="efeitonav" href="../quarto/quarto.php">Quarto</a></li>
+                    <li><a class="efeitonav" href="../contato/contato.php">Contato</a></li>
                     <div class="img-perfil-nav">
                         <a href="../perfil/perfil.php"></a>
                     </div>
                 </ul>
             </nav>
-    
-            <p class="p001">Bem Vindo ao</p> <h1 class="h002">STAR <br> NORDESTINO</h1> <p class="p002">Reserve a sua estadia e desfrute do luxo 
-            <br> redefinido com as taxas mais acessíveis.</p>
-            
-            <div class="agendar">
-                <a href="../../apos_login/agendamento/agendamento.php">
-                    <img src="../../icones_logos/Icon_Button_Agendar.webp" alt="icon_button_agendar"> 
-                    <p>AGENDAR</p>                   
-                </a>
-            </div>
-    
-            <div class="scroll">
-                <a href="#alvo">
-                    <p>Deslize</p>
-                    <img src="../../icones_logos/Icon_ButtonScroll.webp" alt="icon_button_scrrll">
-                </a>
-            </div>
         </section>
+
+            <h1>ENTRE EM CONTATO</h1>
+
     </header>
 
     <main>
-        <div class="main-contenier">
+        <div class="contenier-main">
 
-            <div id="alvo" class="header-main">
-                <h2>QUARTOS E PREÇOS</h2>
-                <P>Cada um dos nossos quartos iluminidos e repletos de luz vem com tudo o que você poderia precisar para uma estadia confortável. E sim, o conforto não é o nosso único objetivo, também valorizamos o bom design, o mobiliário elegante e contemporâneo complementado pelos tons ricos da paleta da natureza, visíveis nas janelas e terraços com vista para o mar de nossos quartos.</P>
+            <div class="header-main">
+                <h2>ESTAMOS AQUI PARA VOCÊ</h2>
+
+                <p>No Star Nordestino, levamos nossos clientes a sério. Você tem alguma dúvida, reclamação ou solicitação, por favor, encaminhe-o para o nosso suporte e entraremos em contato com você o mais breve possível.</p>
             </div>
 
-            <div class="contenier-quartos">
+            <h3>Star Nordestino</h3>
 
-                <div class="contenier-divs-quartos">
-                    <img class="img-config" src="./assets/img/quarto1.webp" alt="foto_quartounico">
-                    <div class="faixa-label">
-                        <h3>QUARTO DUPLO</h3>
-                    </div>
-                    <div class="button-price">
-                        <a href="#">R$ 150 p/noite</a>
-                    </div>            
-                </div>
+            <div class="contenier-map-form">
+                <div class="lado-mapa">                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15833.343184977197!2d-39.32449843781098!3d-7.2024761848473275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a17f536cbf5c4d%3A0x13ad379c14837fa4!2sR.%20do%20Cruzeiro%2C%20497%20-%20Centro%2C%20Juazeiro%20do%20Norte%20-%20CE%2C%2063010-212!5e0!3m2!1spt-BR!2sbr!4v1684708809747!5m2!1spt-BR!2sbr"loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Rua do Cruzeiro, 497 - Centro</p>
+                </div>               
+                
+                <div class="lado-form">
+                    <div class="inframe-form">
+                    <form action="../data_base_antes_login/insert_suporte.php" method="post">
+                        <div class="form">
 
-                <div class="contenier-divs-quartos">
-                    <img class="img-config" src="./assets/img/quarto2.webp" alt="foto_quartoduplo_casal">
-                    <div class="faixa-label">
-                        <h3>QUARTO DUPLO</h3>
-                    </div>
-                    <div class="button-price">
-                        <a href="#">R$ 150 p/noite</a>
-                    </div>            
-                </div>
+                            <label class="label" for="nome_suporte">Nome:</label>
+                            <input class="inputs" type="text" name="nome_suporte" id="nome_suporte" placeholder="Meu nome">
 
-                <div class="contenier-divs-quartos">
-                    <img class="img-config" src="./assets/img/quarto3.webp" alt="foto_quartoduplo_solteiro">
-                    <div class="faixa-label">
-                        <h3>QUARTO ÚNICO</h3>
-                    </div>
-                    <div class="button-price">
-                        <a href="#">R$ 150 p/noite</a>
-                    </div>            
-                </div>
-            
+                            <label class="label" for="email_suporte">Endereço de Email:</label>
+                            <input class="inputs" type="text" name="email_suporte" id="email_suporte" placeholder="Email@gmail.com">
 
-                <div class="footer-body">
-                    <div class="comentarios">
-                        <h2>Comentários</h2>
-                        <p>"Calmo, sereno, retrô - Que maneira de relaxar e aproveitar"</p>
-                        <legend>Sr e Sra Rubens, CE</legend>
-                    </div>
+                            <label class="label" for="mensagem_suporte">Mensagem:</label>
+                            <textarea class="inputs" name="mensagem_suporte" id="mensagem_suporte" maxlength="720"></textarea>
 
-                    <div class="buttons-comentarios">
-                        <a href="#" class="buttons-dos-comentarios"><</a>
-                        <br>
-                        <a href="#" class="buttons-dos-comentarios">></a>
+                            <input id="button-enviar" type="submit" name="clicou" value="Enviar">
+                        </div>
+
+                    </form>
                     </div>
                 </div>
-
             </div>
+
+            <span>
+                <p>Phone: (88) 3102-1134</p>
+                <p>Email: eeeppms@gmail.com</p>
+            </span>
 
         </div>
     </main>
@@ -117,10 +98,10 @@
     
             <section class="secao_one">
                 <div>
-                    <h2 class="txt1f">Star <br> Nordestino</h2>
-                    <p class="txt2f">252 RUA BLA BLA CEP 1234</p>
-                    <p class="txt3f">88988123456</p>
-                    <p class="txt4f">star_nordestino@gmail.com</p>
+                    <h2>Star <br> Nordestino</h2>
+                    <p>252 RUA BLA BLA CEP 1234</p>
+                    <p>88988123456</p>
+                    <p>star_nordestino@gmail.com</p>
                 </div>
             </section>
     
@@ -161,7 +142,7 @@
                     
                     <form action="#">
                         <div class="div_email">
-                            <input type="email" id="email" placeholder="Endereço de Email">
+                            <input type="email" id="email" placeholder="Endereço de Email" required>
                             <input id="button-footer" type="submit" value="OK">
                         </div>
                     </form>
@@ -171,6 +152,7 @@
     
         </div>
     </footer>
+
 
     <dialog id="dialog-sobre-nos">
         <div class="contenier-dialog">
@@ -184,7 +166,7 @@
                         <br>
                         <p>Nosso hotel é conhecido por sua hospitalidade calorosa e atendimento impecável. Nossa equipe dedicada está pronta para recebê-lo com um sorriso e ajudar em todas as suas necessidades durante sua estadia. Quer você esteja aqui para relaxar e desfrutar das praias de areias douradas, explorar a rica cultura local ou participar de atividades emocionantes, estamos aqui para tornar sua experiência verdadeiramente memorável.</p>
                         <br>
-                        <p>Nossos quartos espaçosos e confortáveis são cuidadosamente projetados para oferecer um ambiente acolhedor e relaxante. Cada quarto é equipado com comodidades modernas, como ar-condicionado, TV de tela plana, acesso Wi-Fi gratuito e banheiro privativo. Além disso, muitos de nossos quartos oferecem vistas deslumbrantes do oceano, permitindo que você acorde com uma vista panorâmica de tirar o fôlego todas as manhãs.</p>
+                        <p>Nossos quartos espaçosos e confortáveis ​​são cuidadosamente projetados para oferecer um ambiente acolhedor e relaxante. Cada quarto é equipado com comodidades modernas, como ar-condicionado, TV de tela plana, acesso Wi-Fi gratuito e banheiro privativo. Além disso, muitos de nossos quartos oferecem vistas deslumbrantes do oceano, permitindo que você acorde com uma vista panorâmica de tirar o fôlego todas as manhãs.</p>
                         <br>
                         <p>No Hotel Star Nordestino, a gastronomia é uma parte essencial da experiência. Nosso restaurante no local oferece uma ampla seleção de pratos deliciosos, desde sabores regionais até culinária internacional. Nossos chefs talentosos se esforçam para criar pratos que encantem o paladar de nossos hóspedes, utilizando ingredientes frescos e locais sempre que possível. Você também pode desfrutar de uma bebida refrescante no nosso bar à beira da piscina, enquanto relaxa ao sol e aprecia a vista panorâmica do oceano.</p>
                         <br>
@@ -476,6 +458,5 @@
     </dialog>
 
     <script type="text/javascript" src="./assets/js/index.js" ></script>
-
 </body>
 </html>

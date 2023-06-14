@@ -55,10 +55,10 @@
         <section>
             <nav class="menu">
                 <ul class="links">
-                    <li><a class="efeitonav" href="../inicio/inicio.html">Início</a></li>
-                    <li><a class="efeitonav" href="../instalacoes/instalacoes.html">Instalações</a></li>
-                    <li><a class="efeitonav" href="../quarto/quarto.html">Quarto</a></li>
-                    <li><a class="efeitonav" href="../contato/contato.html">Contato</a></li>
+                    <li><a class="efeitonav" href="../inicio/inicio.php">Início</a></li>
+                    <li><a class="efeitonav" href="../instalacoes/instalacoes.php">Instalações</a></li>
+                    <li><a class="efeitonav" href="../quarto/quarto.php">Quarto</a></li>
+                    <li><a class="efeitonav" href="../contato/contato.php">Contato</a></li>
                     <div class="img-perfil-nav">
                         <a href=""></a>
                     </div>
