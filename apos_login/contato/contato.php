@@ -68,13 +68,13 @@
                         <div class="form">
 
                             <label class="label" for="nome_suporte">Nome:</label>
-                            <input class="inputs" type="text" name="nome_suporte" id="nome_suporte" placeholder="Meu nome">
+                            <input class="inputs" type="text" name="nome_suporte" id="nome_suporte" required placeholder="Insira seu nome">
 
                             <label class="label" for="email_suporte">Endereço de Email:</label>
-                            <input class="inputs" type="text" name="email_suporte" id="email_suporte" placeholder="Email@gmail.com">
+                            <input class="inputs" type="text" name="email_suporte" id="email_suporte" required placeholder="Email@gmail.com">
 
                             <label class="label" for="mensagem_suporte">Mensagem:</label>
-                            <textarea class="inputs" name="mensagem_suporte" id="mensagem_suporte" maxlength="720"></textarea>
+                            <textarea class="inputs" name="mensagem_suporte" id="mensagem_suporte" required maxlength="720"></textarea>
 
                             <input id="button-enviar" type="submit" name="clicou" value="Enviar">
                         </div>
