@@ -184,7 +184,7 @@
                                 </div>
 
                                 <div class="button-agendamento">
-                                    <a href="../agendamento_perfil/agendamento.php" class="button-editar-informações">
+                                    <a href="../data_base_apos_login/verificacao_de_update_agendamento.php" class="button-editar-informações">
                                         <p>Editar Informações</p>
                                     </a>
                                 </div>
