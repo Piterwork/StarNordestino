@@ -48,7 +48,7 @@
             <br> redefinido com as taxas mais acessíveis.</p>
             
             <div class="agendar">
-                <a href="../../apos_login/agendamento/agendamento.php">
+                <a href="../data_base_apos_login/verificacao_de_create_agendamento.php">
                     <img src="../../icones_logos/Icon_Button_Agendar.webp" alt="icon_button_agendar"> 
                     <p>AGENDAR</p>                   
                 </a>
