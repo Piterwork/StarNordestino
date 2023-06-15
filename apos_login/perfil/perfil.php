@@ -35,6 +35,17 @@
         $number_quartos = $sql["number_quartos"];
     }
 
+    if (empty ($acomodacao) || empty ($number_adultos) ||  empty ($date_entrada) ||  empty ($date_saida) ||  empty ($number_criancas) ||  empty ($number_quartos)) {
+
+        $acomodacao = '';
+        $number_adultos = '';
+        $date_entrada = '';
+        $date_saida = '';
+        $number_criancas = '';
+        $number_quartos = '';
+
+    }    
+
     $_SESSION['id_verificacao'] = $id_cadastro;
 ?>
 

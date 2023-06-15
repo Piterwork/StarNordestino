@@ -1,6 +1,6 @@
 <?php
 
-    $hostname = "localhost";
+    $hostname = "127.0.0.1:3312";
     $bancodedados = "starnordestino";
     $usuario = "root";
     $senha = "";
