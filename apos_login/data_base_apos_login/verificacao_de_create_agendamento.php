@@ -17,7 +17,7 @@
 
 		if(mysqli_num_rows($result) >= 1)
         {
-			header('Location: ../../apos_login/respostas/resposta_agendamento.html');
+			header('Location: ../../apos_login/respostas/resposta_criar_agendamento.html');
         }
         else
         {

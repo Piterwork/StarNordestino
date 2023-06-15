@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 15/06/2023 às 06:49
+-- Tempo de geração: 15/06/2023 às 16:54
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -94,7 +94,8 @@ ALTER TABLE `assinatura_newsletter`
 -- Índices de tabela `cadastro`
 --
 ALTER TABLE `cadastro`
-  ADD PRIMARY KEY (`id_cadastro`);
+  ADD PRIMARY KEY (`id_cadastro`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- Índices de tabela `suporte`
